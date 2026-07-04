@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-07-04T19:52:39.666Z",
+  "departments": [
+    {
+      "key": "sales",
+      "name": "Sales",
+      "accent": "FBA62D",
+      "dailyCheckins": [],
+      "weeklyStatus": [],
+      "deliverables": [],
+      "lessonsLearned": "# Sales — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+    },
+    {
+      "key": "business",
+      "name": "Business",
+      "accent": "43B2FC",
+      "dailyCheckins": [],
+      "weeklyStatus": [],
+      "deliverables": [],
+      "lessonsLearned": "# Business — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+    },
+    {
+      "key": "hr-ga",
+      "name": "HR & General Affairs",
+      "accent": "9C77CF",
+      "dailyCheckins": [],
+      "weeklyStatus": [],
+      "deliverables": [],
+      "lessonsLearned": "# HR & GA — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+    },
+    {
+      "key": "finance",
+      "name": "Finance, Accounting & Tax",
+      "accent": "1B8A5E",
+      "dailyCheckins": [],
+      "weeklyStatus": [],
+      "deliverables": [],
+      "lessonsLearned": "# Finance — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+    },
+    {
+      "key": "marketing",
+      "name": "Marketing & Community",
+      "accent": "99417A",
+      "dailyCheckins": [],
+      "weeklyStatus": [],
+      "deliverables": [],
+      "lessonsLearned": "# Marketing & Community — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+    }
+  ]
+}
