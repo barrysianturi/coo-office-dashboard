@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T02:22:26.903Z",
+  "generatedAt": "2026-07-05T08:55:08.386Z",
   "departments": [
     {
       "key": "sales",
@@ -23,10 +23,15 @@
       "key": "hr-ga",
       "name": "HR & General Affairs",
       "accent": "9C77CF",
-      "dailyCheckins": [],
+      "dailyCheckins": [
+        {
+          "filename": "2026-07-05.md",
+          "content": "# HR & GA — Daily Check-in — 2026-07-05\n\n**Progress:** Resumed the claude.ai handoff session in Claude Code with\nreal repo access. Reorganized `data-inbox/hr-ga` into the dated-drop\nconvention, moved SOP and contract templates to `work-products/`, rebuilt\nthe human org chart from actual deck images (resolved 3 of 4 open gaps),\ncorrected and re-saved the human org SOW/KPI draft, updated\n`org/kpi-dashboard.md` with OD process status, and did a Tier 1 pass on\nthe SOP and contract templates.\n**Blockers:** None.\n**Needs Barry today:** 4 Tier 2 items logged to `org/escalation-log.md`,\ncorrespondence backlog of unsigned contracts, 3 open human-org decisions\n(Operations Lead ambiguity, Maura's replacement, Agnes's new scope), and\nthe PKWT template's leftover CO-CEO/shareholder terms.\n"
+        }
+      ],
       "weeklyStatus": [],
       "deliverables": [],
-      "lessonsLearned": "# HR & GA — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+      "lessonsLearned": "# HR & GA — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — HR & GA — 2026-07-05\n\n**Trigger:** A claude.ai session (no repo write access at the time)\nreviewed HR data and produced a handoff markdown file plus a draft xlsx,\nto be picked up by a Claude Code session with real repo access. The\nclaude.ai session inferred org reporting lines and annotation meanings\nfrom PDF/deck text extraction alone, without rendering the actual chart\nimages, and flagged 4 gaps as unresolved guesses.\n**Source:** Self-observed, resuming this handoff in Claude Code with git\nand `pdftoppm`/image-reading access.\n**Lesson:** Text extraction from a slide deck does not reliably preserve\nvisual layout, an org chart's reporting lines and annotation placement\nlive in the shapes/lines, not the text run order. Rendering the actual\npage as an image (`pdftoppm` + Read, `brew install poppler` if missing)\nand reading it directly resolved 3 of the 4 \"gaps needing human\nconfirmation\" in minutes, versus guessing from linearized text. The\nhandoff-file pattern itself worked well: a single markdown file with a\nnumbered todo list, explicit \"action for Claude Code session\" callouts,\nand a clear list of what's genuinely unresolved vs. inferred, made resuming\nin a different session/tool with no shared conversation memory\nstraightforward.\n**Applies to:** Any future cross-session handoff (claude.ai without repo\naccess to Claude Code with it), and any task involving reading org charts,\ndiagrams, or other spatially-laid-out content from a deck or PDF, render\nthe page as an image before trusting extracted text for structure.\n**Status:** Logged\n\n# Lesson — HR & GA — 2026-07-05\n\n**Trigger:** Resuming this handoff, found Finance's Claude Code session\nwas concurrently active in the same repo with its own uncommitted changes\n(modified `org/escalation-log.md`, `finance/staff-logs/*`, untracked\n`data-inbox/finance/2026-*/` files).\n**Source:** Self-observed.\n**Lesson:** Multiple department Heads now have simultaneous real git\naccess to the same repo. Before staging/committing, check `git status` and\n`git diff` for unstaged changes in shared files (`org/escalation-log.md`,\n`org/kpi-dashboard.md`, `org/org-change-log.md`) that belong to another\ndepartment's in-progress work, and never `git add -A`/`git add .`, stage\nonly the files actually touched for this task so another session's\nuncommitted work isn't swept into an unrelated commit.\n**Applies to:** Every future session in this repo, now that multiple\nHeads write concurrently, this is a standing concern, not a one-off.\n**Status:** Logged\n"
     },
     {
       "key": "finance",
@@ -50,6 +55,284 @@
       "weeklyStatus": [],
       "deliverables": [],
       "lessonsLearned": "# Marketing & Community — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+    },
+    {
+      "key": "academic",
+      "name": "Academic",
+      "accent": "7AC43D",
+      "dailyCheckins": [],
+      "weeklyStatus": [],
+      "deliverables": [],
+      "lessonsLearned": "# Academic — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+    },
+    {
+      "key": "product",
+      "name": "Product",
+      "accent": "FF5094",
+      "dailyCheckins": [],
+      "weeklyStatus": [],
+      "deliverables": [],
+      "lessonsLearned": "# Product — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
     }
-  ]
+  ],
+  "escalations": [
+    {
+      "heading": "Escalation — HR & GA — 2026-07-05",
+      "department": "HR & GA",
+      "date": "2026-07-05",
+      "id": "esc-iykh83",
+      "tier": "2 (approval)",
+      "issue": "Auditing `data-inbox/hr-ga/2026-07/correspondence-log.xlsx` (452\nreal entries) found 38 rows marked `Unsigned`. 16 of those are HR/Legal\ncontract-type documents (Kontrak, SPK, SPK-FL, SPK-Partnerships, Surat\nKuasa), spanning Aug 2024 to Feb 2025, meaning 5 months to 1.5+ years past\nthe SOP's own 1-2 business day signing SLA (`hr-ga/work-products/sop-hr-ga.docx`,\nSurat/Document workflow, step 3). Several names on the unsigned list belong\nto people currently active per the Townhall Q3 2026 org chart (Waitatiri,\nCMO; Lana, Creative Lead, appears twice), so this is not obviously stale\ndata. Full list: HRGA-05 (Waitatiri, SPK), HRGA-11/13/14/19/25 (freelancer\nSPKs: Olive Hateem x2, Angga Yulian Saputra x2, Lana Banatul Husna x2),\nHRGA-20/21 (Olivyolanda Liani Sianturi, both offer letter and PKWT\ncontract), HRGA-23/24 (Kontrak, Angga Yulian Saputra), HRGA-26 (Alamii,\npartnership SPK), HRGA-01/2025 (Muhamad Gian Giffar), HRGA-07/2025 (Oscar\nMuhamad Ramadan), LEGAL-28 (Galih, Surat Kuasa). LEGAL-04 and LEGAL-06\n(BNI banking letters) are also unsigned but are GA/banking, not employment\ncontracts.",
+      "recommendation": "Confirm with Septi whether these are (a) actually\nstill unsigned, a real compliance gap against the \"100% contracts\nreviewed/filed pre-execution\" KPI, or (b) signed in reality but the tracker\nwas never updated with the signed-copy link. If (a), prioritize the ones\ntied to still-active people (Waitatiri, Lana) first.",
+      "whyNotTier1": "Confirming real-world signature status and, if\ngenuinely missing, chasing signatures is a real-world action needing a\nhuman who can actually contact the counterparties, not something HR & GA\ncan resolve from the spreadsheet alone.",
+      "neededBy": "Not time-critical for the older ones, but flag\nbefore treating \"contracts reviewed pre-execution: 100%\" as accurate in\nany KPI report, current status downgraded to `AT RISK` in\n`org/kpi-dashboard.md` pending this confirmation.",
+      "crossDept": "None identified.",
+      "decision": "pending",
+      "delegatedTo": "Barry (routes to Septi/People & Operations)",
+      "pending": true,
+      "accent": "9C77CF"
+    },
+    {
+      "heading": "Escalation — HR & GA — 2026-07-05",
+      "department": "HR & GA",
+      "date": "2026-07-05",
+      "id": "esc-1kub9e8",
+      "tier": "2 (approval)",
+      "issue": "Rebuilding the human org chart from the actual Townhall Q3 2026\ndeck images (`hr-ga/work-products/human-org-chart.md`) resolved 3 of the 4\nopen gaps from the prior claude.ai session's draft, but surfaced 3 real\nopen items that need a person, not inference: (1) the deck has two\ndifferent versions of the org chart, one with a vacant Operations Lead\nrole between Barry and Septi/Fira, one without, unclear which is current;\n(2) Maura (Learning & Curriculum Specialist) is flagged \"to be replaced\"\nin the deck with no replacement named; (3) Agnes (Community &\nPartnerships) is flagged \"change roles\" with no new scope specified.",
+      "recommendation": "Confirm all three with Septi or Barry before\n`hr-ga/work-products/human-org-sow-kpi-draft.xlsx` is finalized or promoted\nto a deliverable. Do not guess Maura's replacement or Agnes's new scope.",
+      "whyNotTier1": "These are real personnel/org-design decisions\n(who replaces Maura, what Agnes's new role is, whether Operations Lead is\nbeing created), not extractable from the source deck by inference.",
+      "neededBy": "Before the SOW/KPI workbook is promoted from\nwork-product to deliverable.",
+      "crossDept": "None identified.",
+      "decision": "pending",
+      "delegatedTo": "Barry (routes to Septi/People & Operations)",
+      "pending": true,
+      "accent": "9C77CF"
+    },
+    {
+      "heading": "Escalation — HR & GA — 2026-07-05",
+      "department": "HR & GA",
+      "date": "2026-07-05",
+      "id": "esc-180czin",
+      "tier": "2 (approval)",
+      "issue": "Tier 1 review of `hr-ga/work-products/templates/kontrak-pkwt-template.docx`\nfound it is not a genericized template, it is a lightly-redacted copy of a\nreal contract (dated 22 Jul 2024, role \"CO-CEO\", 5-month term, and a\nshareholder-specific share-return clause in Pasal 5) matching the\ncorrespondence log's `HRGA - 03/PKWT/VII/2024` entry (Barry Mikhael Cavin).\nReused as-is for a new, non-shareholder hire, the role/date/shareholder\nterms would carry over incorrectly. Full detail in\n`hr-ga/work-products/tier1-review-sop-and-contracts.md`.",
+      "recommendation": "Genericize the role and date fields, and move the\nshareholder share-return clause into a standalone addendum used only when\na hire is actually a shareholder.",
+      "whyNotTier1": "Rewriting the substance of a legal contract\ntemplate is a compliance-relevant content decision, not routine\nmonitoring, flagging rather than silently editing it.",
+      "neededBy": "Before this template is next used for a real hire.",
+      "crossDept": "None identified.",
+      "decision": "pending",
+      "delegatedTo": "n/a (drafting fix stays with HR & GA once approved)",
+      "pending": true,
+      "accent": "9C77CF"
+    },
+    {
+      "heading": "Escalation — Finance — 2026-07-05",
+      "department": "Finance",
+      "date": "2026-07-05",
+      "id": "esc-sxac6j",
+      "tier": "2 (approval)",
+      "issue": "FY2025 journal entries show PPh21/PPh23 payments made in April 2025 for tax periods back to July 2024, implying company activity predates the earliest journal on file. If FY2024 transactions exist, Finance has no journal or financial statements for that year.",
+      "recommendation": "Treat as a Tier 2 item. Do not start building FY2024 books without an explicit go-ahead on scope, this needs Barry to decide timeline and resourcing (in-house vs. external bookkeeping help) before any reconstruction work begins.",
+      "whyNotTier1": "Reconstructing a prior fiscal year's books is a resourcing and scope decision, not routine bookkeeping, and the underlying data (if it exists) hasn't been located yet.",
+      "neededBy": "Not time-critical, but blocks any FY2024 work stream until scoped.",
+      "crossDept": "None identified.",
+      "decision": "Approved as Tier 2, 2026-07-05. Confirms this should not be folded quietly into ongoing Accounting Officer work. Priority: low, sequence after FY2025 and FY2026 books are finished. Scope (timeline, in-house vs. external bookkeeping help) still to be decided before any FY2024 reconstruction work begins.",
+      "delegatedTo": "n/a",
+      "pending": false,
+      "accent": "1B8A5E"
+    }
+  ],
+  "kpi": {
+    "rows": [
+      {
+        "dept": "Sales",
+        "kpi": "Sales target achieved",
+        "subMetric": "Revenue vs. target",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "FBA62D"
+      },
+      {
+        "dept": "Sales",
+        "kpi": "Sales target achieved",
+        "subMetric": "B2C conversion rate",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "FBA62D"
+      },
+      {
+        "dept": "Sales",
+        "kpi": "Sales target achieved",
+        "subMetric": "B2B win rate",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "FBA62D"
+      },
+      {
+        "dept": "Sales",
+        "kpi": "Healthy acquisition cost",
+        "subMetric": "LTV:CAC",
+        "target": "≥1.93x",
+        "current": "",
+        "status": "",
+        "accent": "FBA62D"
+      },
+      {
+        "dept": "Business",
+        "kpi": "Market & competitor analysis",
+        "subMetric": "Quarterly competitor review",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "43B2FC"
+      },
+      {
+        "dept": "Business",
+        "kpi": "One-step-ahead direction",
+        "subMetric": "Opportunities evaluated/quarter",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "43B2FC"
+      },
+      {
+        "dept": "HR & GA",
+        "kpi": "Scalable organization",
+        "subMetric": "Span of control",
+        "target": "5-8",
+        "current": "",
+        "status": "",
+        "accent": "9C77CF"
+      },
+      {
+        "dept": "HR & GA",
+        "kpi": "Scalable organization",
+        "subMetric": "OD process stage",
+        "target": "7 of 7 stages complete",
+        "current": "Stage 5 of 7, Designing Intervention (rolling out via Lunch & Learn, Bulan 1-3)",
+        "status": "ON TRACK",
+        "accent": "9C77CF"
+      },
+      {
+        "dept": "HR & GA",
+        "kpi": "Legal compliance",
+        "subMetric": "Contracts reviewed pre-execution",
+        "target": "100%",
+        "current": "38 correspondence-log entries flagged Unsigned, several are contracts/SPKs 5+ months past the SOP's 1-2 day signing SLA, see escalation log",
+        "status": "AT RISK",
+        "accent": "9C77CF"
+      },
+      {
+        "dept": "Finance",
+        "kpi": "Operational excellence",
+        "subMetric": "On-time statutory filings",
+        "target": "100%",
+        "current": "",
+        "status": "",
+        "accent": "1B8A5E"
+      },
+      {
+        "dept": "Finance",
+        "kpi": "Strategic clarity",
+        "subMetric": "Forecast variance",
+        "target": "±10%",
+        "current": "",
+        "status": "",
+        "accent": "1B8A5E"
+      },
+      {
+        "dept": "Marketing",
+        "kpi": "Channel optimization",
+        "subMetric": "Campaign ROI",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "99417A"
+      },
+      {
+        "dept": "Marketing",
+        "kpi": "Clear brand & positioning",
+        "subMetric": "Brand consistency score",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "99417A"
+      },
+      {
+        "dept": "Academic",
+        "kpi": "Learning goals achieved",
+        "subMetric": "Goal-achievement rate",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "7AC43D"
+      },
+      {
+        "dept": "Academic",
+        "kpi": "Learning goals achieved",
+        "subMetric": "Students with defined goals",
+        "target": "100%",
+        "current": "",
+        "status": "",
+        "accent": "7AC43D"
+      },
+      {
+        "dept": "Academic",
+        "kpi": "Impact & intervention",
+        "subMetric": "Causal studies per quarter",
+        "target": "≥1",
+        "current": "",
+        "status": "",
+        "accent": "7AC43D"
+      },
+      {
+        "dept": "Academic",
+        "kpi": "Impact & intervention",
+        "subMetric": "Flagged students fed back within 7 days",
+        "target": "100%",
+        "current": "",
+        "status": "",
+        "accent": "7AC43D"
+      },
+      {
+        "dept": "Product",
+        "kpi": "Experience quality",
+        "subMetric": "Task success rate, key journeys",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "FF5094"
+      },
+      {
+        "dept": "Product",
+        "kpi": "Experience quality",
+        "subMetric": "Usability issues fixed per cycle",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "FF5094"
+      },
+      {
+        "dept": "Product",
+        "kpi": "Funnel & web performance",
+        "subMetric": "Visitor→trial→paid conversion",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "FF5094"
+      },
+      {
+        "dept": "Product",
+        "kpi": "Funnel & web performance",
+        "subMetric": "30-day adoption of shipped changes",
+        "target": "",
+        "current": "",
+        "status": "",
+        "accent": "FF5094"
+      }
+    ],
+    "lastUpdated": "2026-07-05 (HR & GA rows only, by HR & GA)"
+  }
 }
