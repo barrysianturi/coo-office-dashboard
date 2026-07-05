@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T12:41:56.331Z",
+  "generatedAt": "2026-07-05T12:56:59.764Z",
   "departments": [
     {
       "key": "sales",
@@ -76,6 +76,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation - COO Office - 2026-07-05",
+      "department": "COO Office",
+      "date": "2026-07-05",
+      "id": "ESC-20260705-COO-01",
+      "tier": "2 (approval)",
+      "issue": "Head of Academic will handle children's learning data. A draft\nStudent Data Policy now exists at `org/student-data-policy.md` covering\npseudonymization, pre-stripped data-inbox drops, aggregate-first\nreporting, a hard ban on student-level data in the public dashboard,\nhuman-delivered family feedback, retention, and incident routing. It\nbinds all departments and is marked DRAFT until approved.",
+      "recommendation": "Approve the policy as written, or reply with edits.\nThe one judgment call worth your eyes: rule 1 keeps the\npseudonym-to-identity mapping entirely outside the repo (with you or the\nplatform database), which means agents can never re-identify students\nwithout you in the loop, safest, but adds a manual step whenever Academic\nneeds to hand a real intervention list to a human.",
+      "whyNotTier1": "Data-protection policy for children's data is a\ncompany-level commitment, not an operating detail a Head can self-approve.",
+      "neededBy": "Before any real student data lands in\n`data-inbox/academic/`.",
+      "crossDept": "All departments, Academic and HR & GA most\ndirectly.",
+      "decision": "pending",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "64748B"
+    },
     {
       "heading": "Escalation — HR & GA — 2026-07-05",
       "department": "HR & GA",
