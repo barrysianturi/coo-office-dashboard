@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T08:55:08.386Z",
+  "generatedAt": "2026-07-05T12:41:56.331Z",
   "departments": [
     {
       "key": "sales",
@@ -103,9 +103,9 @@
       "whyNotTier1": "These are real personnel/org-design decisions\n(who replaces Maura, what Agnes's new role is, whether Operations Lead is\nbeing created), not extractable from the source deck by inference.",
       "neededBy": "Before the SOW/KPI workbook is promoted from\nwork-product to deliverable.",
       "crossDept": "None identified.",
-      "decision": "pending",
+      "decision": "(1) Use the org chart version with the vacant Operations Lead role. (2) Maura is going to be replaced by Siti, Maura's last day is end of July 2026. (3) Agnes takes responsibility for Community & Partnerships (previously Community only) and starts reporting to the CMO from W2 July. To be announced at the townhall next Wednesday. _(via dashboard, 2026-07-05; restored full text after a truncation bug in apply-decision.mjs)_",
       "delegatedTo": "Barry (routes to Septi/People & Operations)",
-      "pending": true,
+      "pending": false,
       "accent": "9C77CF"
     },
     {
@@ -119,9 +119,9 @@
       "whyNotTier1": "Rewriting the substance of a legal contract\ntemplate is a compliance-relevant content decision, not routine\nmonitoring, flagging rather than silently editing it.",
       "neededBy": "Before this template is next used for a real hire.",
       "crossDept": "None identified.",
-      "decision": "pending",
+      "decision": "Please hire a legal & compliance sub-agent. Ask it to review the document, then genericize the role and date fields, and move the shareholder share-return clause into a standalone addendum used only when a hire is actually a shareholder. _(via dashboard, 2026-07-05)_",
       "delegatedTo": "n/a (drafting fix stays with HR & GA once approved)",
-      "pending": true,
+      "pending": false,
       "accent": "9C77CF"
     },
     {

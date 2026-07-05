@@ -53,6 +53,31 @@ function el(tag, className, text) {
 
 /* ---------- Decisions tab ---------- */
 
+// Local record of decisions Barry has sent but that haven't landed in the
+// escalation log yet (the round trip is: GitHub issue -> workflow -> commit
+// -> redeploy). Keeps the page honest between submit and sync.
+function submittedKey(id) {
+  return "coo-decision-submitted:" + id;
+}
+function getSubmitted(id) {
+  try {
+    const v = localStorage.getItem(submittedKey(id));
+    return v ? JSON.parse(v) : null;
+  } catch {
+    return null;
+  }
+}
+function saveSubmitted(id, text) {
+  try {
+    localStorage.setItem(submittedKey(id), JSON.stringify({ text, at: Date.now() }));
+  } catch {}
+}
+function clearSubmitted(id) {
+  try {
+    localStorage.removeItem(submittedKey(id));
+  } catch {}
+}
+
 function escalationField(label, value) {
   if (!value) return null;
   const row = el("div", "esc-field");
@@ -90,6 +115,23 @@ function escalationCard(esc) {
   });
 
   if (esc.pending) {
+    const submitted = getSubmitted(esc.id);
+    if (submitted) {
+      const note = el("div", "esc-decision esc-submitted");
+      note.appendChild(el("span", "esc-label", "Decision sent, waiting for sync"));
+      note.appendChild(el("div", "esc-value", submitted.text));
+      note.appendChild(
+        el(
+          "p",
+          "esc-hint",
+          `Sent ${new Date(submitted.at).toLocaleString()}. If you submitted the ` +
+            "GitHub issue, this card flips to DECIDED on the next deploy " +
+            "(1-2 minutes), refresh to check. If you closed the issue tab " +
+            "without submitting, send it again below."
+        )
+      );
+      card.appendChild(note);
+    }
     const form = el("div", "esc-form");
     const ta = el("textarea");
     ta.placeholder = "Write your decision here...";
@@ -113,7 +155,10 @@ function escalationCard(esc) {
       const url =
         `https://github.com/${PRIVATE_REPO}/issues/new` +
         `?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+      saveSubmitted(esc.id, text);
       window.open(url, "_blank");
+      btn.textContent = "Sent, see the GitHub tab";
+      btn.disabled = true;
     });
     form.appendChild(ta);
     form.appendChild(btn);
@@ -129,6 +174,7 @@ function escalationCard(esc) {
     );
     card.appendChild(form);
   } else {
+    clearSubmitted(esc.id);
     const done = el("div", "esc-decision");
     done.appendChild(el("span", "esc-label", "Barry's decision"));
     done.appendChild(el("div", "esc-value", esc.decision));
