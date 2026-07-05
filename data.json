@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T19:52:39.666Z",
+  "generatedAt": "2026-07-05T02:22:26.903Z",
   "departments": [
     {
       "key": "sales",
@@ -32,10 +32,15 @@
       "key": "finance",
       "name": "Finance, Accounting & Tax",
       "accent": "1B8A5E",
-      "dailyCheckins": [],
+      "dailyCheckins": [
+        {
+          "filename": "2026-07-05.md",
+          "content": "### 2026-07-05\n- Progress: Finalized COA restructure across five rounds with Barry. Full old-to-new mapping confirmed, COGS group created, one account retired (5206), two new accounts added (2208, proposed 1105), CAC tag taxonomy defined (CAC/Non-CAC, then Marketing/Sales). Applied to repo: new COA filed at `finance/reference/chart-of-accounts.csv`, FY2025 journal export split into `data-inbox/finance/2025-01/` through `2025-12/`, FY2025 example statements filed at `finance/reference/`.\n- Blockers: Three retroactive cleanups (COGS split, 5309/8201 split, CAC tagging) all need the complete historical journal export. Xendit.csv has data-quality issues (VALUE-error rows). Possible FY2024 books not yet scoped.\n- Next: Confirm 1105 with Tax & Compliance, get clean Xendit export, get Barry's scoping decision on FY2024, build CAC tag taxonomy into the journal template with FP&A.\n"
+        }
+      ],
       "weeklyStatus": [],
       "deliverables": [],
-      "lessonsLearned": "# Finance — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+      "lessonsLearned": "# Finance — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Finance — 2026-07-05\n\n**Trigger:** Retroactive reclass and full historical CAC tagging approved by Barry\n**Source:** Barry feedback\n**Lesson:** Retroactive cleanups need the complete data export up front, sampled data (via search) is enough to design the mapping but not to execute it. Should ask for the full export as soon as a retroactive scope is even possible, rather than after approval.\n**Applies to:** Any future retroactive reclass or historical data cleanup request.\n**Status:** Logged\n\n# Lesson — Finance — 2026-07-05\n\n**Trigger:** COGS/OpEx reclassification and CAC tagging requests surfaced during COA work\n**Source:** Self-observed\n**Lesson:** A \"simple\" chart-of-accounts cleanup can surface real cross-functional policy decisions (gross margin definition, CAC attribution methodology) that go beyond Finance's own call. Flagging these early and routing to FP&A/Tax & Compliance rather than deciding unilaterally kept the process honest. Barry confirmed that when cross-department clarification is needed (not just cross-work-stream within Finance), the relevant documents should be updated to formally ask the other Head, rather than assuming or deciding on their behalf.\n**Applies to:** Any COA or reporting-structure change, always scan for downstream KPI/attribution implications before finalizing, and route genuinely cross-department questions to the relevant Head rather than deciding internally.\n**Status:** Logged\n\n# Lesson — Finance — 2026-07-05\n\n**Trigger:** Reviewing a proposed COA restructure line by line\n**Source:** Self-observed\n**Lesson:** A handful of accounts had descriptions that directly contradicted their own account name or excluded the very thing they were named for (5202, 5207, 2207, 5315). These read like copy-paste errors that would have caused real misposting if applied as-is. Barry confirmed this check should also cover MECE (mutually exclusive, collectively exhaustive) consistency across different accounts, not just internal name-vs-description consistency.\n**Applies to:** Whenever reviewing any proposed COA or template change, check every account's name against its own description AND against every other account's scope for overlap or gaps, before treating it as ready to apply.\n**Status:** Logged\n\n# Lesson — Finance — 2026-07-05\n\n**Trigger:** New COA.csv and Example-*.csv files reviewed in data-inbox/finance/\n**Source:** Self-observed\n**Lesson:** Structural/reference documents (like a chart-of-accounts) sitting in data-inbox/ next to monthly transactional dumps invite confusion about what's live data vs. reference material, and about read-only conventions.\n**Applies to:** Any future non-transactional document Barry drops for Finance, route it to finance/reference/ instead of data-inbox/finance/, keep data-inbox strictly for monthly bank/expense/revenue transaction files.\n**Status:** Logged\n"
     },
     {
       "key": "marketing",
