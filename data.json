@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T02:52:44.749Z",
+  "generatedAt": "2026-07-06T03:58:58.596Z",
   "departments": [
     {
       "key": "sales",
@@ -137,9 +137,9 @@
       "whyNotTier1": "This requires real people to physically send\nmessages and investigate a billing system. Business can identify the gap\nand prioritize the list, it cannot execute the outreach or debug billing\ninfrastructure itself.",
       "neededBy": "This week, the oldest cohort is already stale by\na month and compounding.",
       "crossDept": "Sales (B2C Sales & CS Lead owns execution),\nFinance (billing/payment gateway ownership unclear from Business's view,\nBarry to confirm who owns it).",
-      "decision": "{pending}",
+      "decision": "reset everything, the tracking is not good so far, don't trust it, just take the file as the first look at the flow and what we are currently doing, however data updates were not done frequently. should be part of your job to set a better flow for generating data, contacting, and conversion tracking. _(via dashboard, 2026-07-06)_",
       "delegatedTo": "{pending, Barry to assign}",
-      "pending": true,
+      "pending": false,
       "accent": "43B2FC"
     },
     {
