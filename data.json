@@ -1,11 +1,16 @@
 {
-  "generatedAt": "2026-07-06T01:25:44.481Z",
+  "generatedAt": "2026-07-06T01:28:52.718Z",
   "departments": [
     {
       "key": "sales",
       "name": "Sales",
       "accent": "FBA62D",
-      "dailyCheckins": [],
+      "dailyCheckins": [
+        {
+          "filename": "2026-07-06.md",
+          "content": "# Sales — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
+        }
+      ],
       "weeklyStatus": [],
       "deliverables": [],
       "lessonsLearned": "# Sales — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
@@ -14,7 +19,12 @@
       "key": "business",
       "name": "Business",
       "accent": "43B2FC",
-      "dailyCheckins": [],
+      "dailyCheckins": [
+        {
+          "filename": "2026-07-06.md",
+          "content": "# Business — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
+        }
+      ],
       "weeklyStatus": [],
       "deliverables": [],
       "lessonsLearned": "# Business — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
@@ -39,6 +49,10 @@
       "accent": "1B8A5E",
       "dailyCheckins": [
         {
+          "filename": "2026-07-06.md",
+          "content": "# Finance — Daily Check-in — 2026-07-06\n\n**Progress:** No new activity since yesterday's check-in. FY2026 journal\nfiling and the chart-of-accounts restructure are already logged in\n`finance/daily-checkins/2026-07-05.md`.\n**Blockers:** Three retroactive cleanups (COGS split, 5309/8201 split, CAC\ntagging) still need the complete historical journal export.\n**Needs Barry today:** None.\n"
+        },
+        {
           "filename": "2026-07-05.md",
           "content": "### 2026-07-05\n- Progress: Finalized COA restructure across five rounds with Barry. Full old-to-new mapping confirmed, COGS group created, one account retired (5206), two new accounts added (2208, proposed 1105), CAC tag taxonomy defined (CAC/Non-CAC, then Marketing/Sales). Applied to repo: new COA filed at `finance/reference/chart-of-accounts.csv`, FY2025 journal export split into `data-inbox/finance/2025-01/` through `2025-12/`, FY2025 example statements filed at `finance/reference/`.\n- Blockers: Three retroactive cleanups (COGS split, 5309/8201 split, CAC tagging) all need the complete historical journal export. Xendit.csv has data-quality issues (VALUE-error rows). Possible FY2024 books not yet scoped.\n- Next: Confirm 1105 with Tax & Compliance, get clean Xendit export, get Barry's scoping decision on FY2024, build CAC tag taxonomy into the journal template with FP&A.\n"
         }
@@ -51,7 +65,12 @@
       "key": "marketing",
       "name": "Marketing & Community",
       "accent": "99417A",
-      "dailyCheckins": [],
+      "dailyCheckins": [
+        {
+          "filename": "2026-07-06.md",
+          "content": "# Marketing — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
+        }
+      ],
       "weeklyStatus": [],
       "deliverables": [],
       "lessonsLearned": "# Marketing & Community — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
@@ -60,7 +79,12 @@
       "key": "academic",
       "name": "Academic",
       "accent": "7AC43D",
-      "dailyCheckins": [],
+      "dailyCheckins": [
+        {
+          "filename": "2026-07-06.md",
+          "content": "# Academic — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** Student Data Policy (`org/student-data-policy.md`,\nESC-20260705-COO-01) still awaiting Barry's approval before any real\nstudent data can land in `data-inbox/academic/`.\n"
+        }
+      ],
       "weeklyStatus": [],
       "deliverables": [],
       "lessonsLearned": "# Academic — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
@@ -69,7 +93,12 @@
       "key": "product",
       "name": "Product",
       "accent": "FF5094",
-      "dailyCheckins": [],
+      "dailyCheckins": [
+        {
+          "filename": "2026-07-06.md",
+          "content": "# Product — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
+        }
+      ],
       "weeklyStatus": [],
       "deliverables": [],
       "lessonsLearned": "# Product — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
