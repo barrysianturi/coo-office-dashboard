@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T17:38:58.511Z",
+  "generatedAt": "2026-07-06T17:51:43.572Z",
   "departments": [
     {
       "key": "sales",
@@ -83,12 +83,12 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-06.md",
-          "content": "# Marketing — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
+          "content": "# Marketing — Daily Check-in — 2026-07-06\n\n**Progress:** Reviewed the NAY campaign kickoff against the standing\nbrand strategy doc, found positioning stale since early launch and never\naddressed B2B. Produced a refreshed competitor analysis, refreshed B2C\nICP plus a first-draft B2B ICP, and a five-workstream brand-positioning\nworkplan. Opened PR #15.\n**Blockers:** Three of five workplan workstreams are blocked on input\nfrom Business, Sales, Academic, and Product, see escalation\nESC-20260706-MKT-01.\n**Needs Barry today:** Route the four consultation asks in\nESC-20260706-MKT-01, Sales's B2B ICP validation is the most time-\nsensitive since a competitor is already selling at the school level.\n"
         }
       ],
       "weeklyStatus": [],
       "deliverables": [],
-      "lessonsLearned": "# Marketing & Community — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+      "lessonsLearned": "# Marketing & Community — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Marketing — 2026-07-06\n\n**Trigger:** Reviewing the standing brand strategy doc while breaking\ndown the brand-positioning task, its own GTM targets (700 followers, 100\nemail signups) turned out to describe a pre-launch brand, while current\nstate is 45.2K IG followers per the NAY campaign deck. The mismatch\nwasn't flagged anywhere before this review.\n**Source:** Self-observed\n**Lesson:** A brand strategy doc's audience/problem framing can stay\nvalid for years, but its GTM targets and stage-of-brand assumptions go\nstale fast and silently. Before reusing an old strategy doc as-is,\ncross-check its stated targets against current owned-channel numbers,\nnot just its narrative content, to catch this kind of drift early.\n**Applies to:** Any future brand strategy or positioning review.\n**Status:** Logged\n\n# Lesson — Marketing — 2026-07-06\n\n**Trigger:** Asked to \"consult with relevant head agents\" on brand\npositioning. There is no live channel to message other Heads directly,\nSendMessage only reaches teammates spawned in this session, not other\ndepartments' independent sessions.\n**Source:** Self-observed\n**Lesson:** \"Consulting\" another department means packaging specific,\nanswerable asks into an escalation-log entry (or a direct question in a\nwork-product) for Barry to route or answer, not expecting a live\nback-and-forth. Frame each ask so it's decidable or delegable on its own,\nper the escalation rubric, since there's no follow-up round-trip.\n**Applies to:** Any task that says \"consult\" or \"get input from\" another\ndepartment's Head.\n**Status:** Logged\n"
     },
     {
       "key": "academic",
