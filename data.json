@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T01:28:52.718Z",
+  "generatedAt": "2026-07-06T01:29:23.622Z",
   "departments": [
     {
       "key": "sales",
@@ -82,7 +82,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-06.md",
-          "content": "# Academic — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** Student Data Policy (`org/student-data-policy.md`,\nESC-20260705-COO-01) still awaiting Barry's approval before any real\nstudent data can land in `data-inbox/academic/`.\n"
+          "content": "# Academic — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None. Barry ruled on the Student Data Policy\n(ESC-20260705-COO-01): learning data feeding the agents should carry only\nstudent_id, no personal data, verify that is sufficient and re-raise if not\nonce real data lands.\n"
         }
       ],
       "weeklyStatus": [],
