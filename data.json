@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T02:43:43.538Z",
+  "generatedAt": "2026-07-06T02:46:26.967Z",
   "departments": [
     {
       "key": "sales",
@@ -22,12 +22,12 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-06.md",
-          "content": "# Business — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
+          "content": "# Business — Daily Check-in — 2026-07-06\n\n**Progress:** Filled out full sub-metric breakdown for both Business KPIs\nin `org/kpi-dashboard.md` (previously blank since dept standup). Logged a\nlessons-learned entry on the gap.\n**Blockers:** `data-inbox/business/` has no data feed yet, competitor\nreview, pricing benchmarking, and market sizing all blocked pending real\ndata or a desk-research start.\n**Needs Barry today:** None. Flagging for awareness: Business Evaluation\nSpecialist can start public desk research on competitors as an interim\nsubstitute if no data feed is coming soon, say the word if you'd like that\nkicked off.\n"
         }
       ],
       "weeklyStatus": [],
       "deliverables": [],
-      "lessonsLearned": "# Business — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+      "lessonsLearned": "# Business — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Business — 2026-07-06\n\n**Trigger:** First KPI dashboard pass since department stood up 2026-07-05.\nBoth Business KPIs had blank target/current/status rows in\n`org/kpi-dashboard.md`, and neither sub-metric breakdown matched the full\nset named in `business/SYSTEM-PROMPT.md` (pricing benchmarking and market\nsizing were missing from Market & competitor analysis; signal-to-decision\nlead time and recommendation-to-execution hit rate were missing from\nOne-step-ahead direction).\n**Source:** Self-observed.\n**Lesson:** A KPI with no sub-metric rows reads as \"no status\" instead of\n\"OFF TRACK.\" Always break a KPI into its full named sub-metrics\nimmediately on setup, even before any real data exists, so the dashboard\nreflects a true gap rather than an empty cell. Also: `data-inbox/business/`\nhas never received a feed from Barry, so competitor/pricing/market-sizing\nwork is currently blocked on either (a) Barry feeding real data, or (b)\nBusiness Evaluation Specialist starting public desk research as an\ninterim Tier 1 substitute.\n**Applies to:** Quarterly competitor review cadence, weekly KPI dashboard\nupdates.\n**Status:** Logged.\n"
     },
     {
       "key": "hr-ga",
@@ -100,12 +100,18 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-06.md",
-          "content": "# Product — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
+          "content": "# Product — Daily Check-in — 2026-07-06\n\n**Progress:** Consolidated 3 legacy product docs (back-office curriculum\nglossary, pedagogy explainer, parent user manual) into one internal\nknowledge base at `deliverables/product-knowledge-base.md`, built from\n`work-products/2026-07-product-doc-source-inventory.md`. Source files\narchived to `data-inbox/product/2026-07/`.\n**Blockers:** None.\n**Needs Barry today:** None. Flagged as open gaps in the knowledge base\n(Section 5), not blocking: undefined `INSIDEN*` back-office terms, and no\nconfirmed mapping between the PISA-domain framing and back-office\nFamily/Vertical fields.\n"
         }
       ],
       "weeklyStatus": [],
-      "deliverables": [],
-      "lessonsLearned": "# Product — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n"
+      "deliverables": [
+        {
+          "filename": "product-knowledge-base.md",
+          "sizeBytes": 13211,
+          "isDir": false
+        }
+      ],
+      "lessonsLearned": "# Product — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Product — 2026-07-06\n\n**Trigger:** Consolidating 3 legacy product docs (back-office curriculum\nglossary, pedagogy explainer, user manual) into one internal knowledge\nbase.\n**Source:** Self-observed.\n**Lesson:** Product documentation Barry hands over tends to arrive as\nseparate, audience-specific fragments (internal back-office terms,\npedagogy narrative, parent-facing manual) with no cross-references\nbetween them, and back-office terminology sometimes carries undefined or\nuntranslated terms straight through from Smartick global (e.g. the\n`INSIDEN*` list, Spanish variable names like `Tmr`/`Karma`). Treating a\ngap as a flagged open item is safer than inferring a plausible-sounding\ndefinition.\n**Applies to:** any future intake of raw product documentation. Route new\nsource material into `data-inbox/product/YYYY-MM/`, inventory it in\n`work-products/`, then update `deliverables/product-knowledge-base.md`\nrather than creating a new parallel doc.\n**Status:** Logged.\n\n"
     }
   ],
   "escalations": [
@@ -232,18 +238,54 @@
         "dept": "Business",
         "kpi": "Market & competitor analysis",
         "subMetric": "Quarterly competitor review",
-        "target": "",
-        "current": "",
-        "status": "",
+        "target": "1 per quarter",
+        "current": "Not started, dept stood up 2026-07-05, no data-inbox feed yet",
+        "status": "OFF TRACK",
+        "accent": "43B2FC"
+      },
+      {
+        "dept": "Business",
+        "kpi": "Market & competitor analysis",
+        "subMetric": "Pricing benchmarking",
+        "target": "1 per quarter",
+        "current": "Not started",
+        "status": "OFF TRACK",
+        "accent": "43B2FC"
+      },
+      {
+        "dept": "Business",
+        "kpi": "Market & competitor analysis",
+        "subMetric": "Market sizing update",
+        "target": "1 per quarter",
+        "current": "Not started",
+        "status": "OFF TRACK",
         "accent": "43B2FC"
       },
       {
         "dept": "Business",
         "kpi": "One-step-ahead direction",
         "subMetric": "Opportunities evaluated/quarter",
-        "target": "",
-        "current": "",
-        "status": "",
+        "target": "≥3",
+        "current": "0 this quarter",
+        "status": "OFF TRACK",
+        "accent": "43B2FC"
+      },
+      {
+        "dept": "Business",
+        "kpi": "One-step-ahead direction",
+        "subMetric": "Signal-to-decision lead time",
+        "target": "≤14 days",
+        "current": "No signals logged yet",
+        "status": "OFF TRACK",
+        "accent": "43B2FC"
+      },
+      {
+        "dept": "Business",
+        "kpi": "One-step-ahead direction",
+        "subMetric": "Recommendation-to-execution hit rate",
+        "target": "≥70%",
+        "current": "No recommendations made yet",
+        "status": "OFF TRACK",
         "accent": "43B2FC"
       },
       {
@@ -382,6 +424,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-05 (HR & GA rows only, by HR & GA)"
+    "lastUpdated": "2026-07-05 (HR & GA rows only, by HR & GA); 2026-07-06 (Business rows only, by Business)"
   }
 }
