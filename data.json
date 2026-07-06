@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T01:24:37.677Z",
+  "generatedAt": "2026-07-06T01:25:44.481Z",
   "departments": [
     {
       "key": "sales",
@@ -103,9 +103,9 @@
       "whyNotTier1": "Confirming real-world signature status and, if\ngenuinely missing, chasing signatures is a real-world action needing a\nhuman who can actually contact the counterparties, not something HR & GA\ncan resolve from the spreadsheet alone.",
       "neededBy": "Not time-critical for the older ones, but flag\nbefore treating \"contracts reviewed pre-execution: 100%\" as accurate in\nany KPI report, current status downgraded to `AT RISK` in\n`org/kpi-dashboard.md` pending this confirmation.",
       "crossDept": "None identified.",
-      "decision": "pending",
+      "decision": "Some are unsigned, but some are already signed. Septi will be collecting the already-signed documents, but backdate is the least priority here. Only make sure signed-copies are present for future documents. _(via dashboard, 2026-07-06)_",
       "delegatedTo": "Barry (routes to Septi/People & Operations)",
-      "pending": true,
+      "pending": false,
       "accent": "9C77CF"
     },
     {
