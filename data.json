@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T04:02:05.813Z",
+  "generatedAt": "2026-07-06T04:03:54.232Z",
   "departments": [
     {
       "key": "sales",
@@ -185,9 +185,9 @@
       "whyNotTier1": "A brand narrative rewrite and net-new B2B\npositioning material materially affect brand positioning\n(`marketing/SYSTEM-PROMPT.md` Tier 2 threshold), and three of the four\nasks require input this department cannot generate itself from other\ndepartments' real data.",
       "neededBy": "Not blocking this week, but the B2B ask (Sales)\nshould be prioritized since a competitor is already selling into that\nsegment and Marketing has nothing to counter it with.",
       "crossDept": "Business (competitor-analysis KPI overlap,\nflagged so as not to duplicate effort), Sales (B2C ICP correction, B2B\nICP validation), Academic and Product (proof-point data for\ndifferentiation claims).",
-      "decision": "{pending}",
+      "decision": "nice, i'll send you a couple more data related to qualitative research (we have done some survey and interviews), you should keep communicating with the other heads to move faster. _(via dashboard, 2026-07-06)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "99417A"
     },
     {
