@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T01:29:23.622Z",
+  "generatedAt": "2026-07-06T01:56:47.491Z",
   "departments": [
     {
       "key": "sales",
@@ -34,6 +34,10 @@
       "name": "HR & General Affairs",
       "accent": "9C77CF",
       "dailyCheckins": [
+        {
+          "filename": "2026-07-06.md",
+          "content": "# HR & GA — Daily Check-in — 2026-07-06\n\n**Progress:** Barry ruled on 2 of the 3 open escalations from yesterday via\nthe dashboard: (1) org chart confirmed as the version with a vacant\nOperations Lead, Maura to be replaced by Siti (last day end of July 2026),\nAgnes's scope expands to Community & Partnerships reporting to CMO from\nW2 July, to be announced at Wednesday's townhall; (2) approved recruiting\na Legal & Compliance Specialist to review and genericize the PKWT\ntemplate. Neither has been executed yet, next up.\n**Blockers:** None.\n**Needs Barry today:** Nothing new, still waiting on the correspondence\nbacklog escalation (unsigned contracts) and the COO Office's Student Data\nPolicy, both still pending.\n"
+        },
         {
           "filename": "2026-07-05.md",
           "content": "# HR & GA — Daily Check-in — 2026-07-05\n\n**Progress:** Resumed the claude.ai handoff session in Claude Code with\nreal repo access. Reorganized `data-inbox/hr-ga` into the dated-drop\nconvention, moved SOP and contract templates to `work-products/`, rebuilt\nthe human org chart from actual deck images (resolved 3 of 4 open gaps),\ncorrected and re-saved the human org SOW/KPI draft, updated\n`org/kpi-dashboard.md` with OD process status, and did a Tier 1 pass on\nthe SOP and contract templates.\n**Blockers:** None.\n**Needs Barry today:** 4 Tier 2 items logged to `org/escalation-log.md`,\ncorrespondence backlog of unsigned contracts, 3 open human-org decisions\n(Operations Lead ambiguity, Maura's replacement, Agnes's new scope), and\nthe PKWT template's leftover CO-CEO/shareholder terms.\n"
