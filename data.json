@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T01:56:47.491Z",
+  "generatedAt": "2026-07-06T02:43:43.538Z",
   "departments": [
     {
       "key": "sales",
@@ -86,7 +86,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-06.md",
-          "content": "# Academic — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None. Barry ruled on the Student Data Policy\n(ESC-20260705-COO-01): learning data feeding the agents should carry only\nstudent_id, no personal data, verify that is sufficient and re-raise if not\nonce real data lands.\n"
+          "content": "# Academic — Daily Check-in — 2026-07-06\n\n**Progress:** Read `org/student-data-policy.md` against Barry's ruling on\nESC-20260705-COO-01 (student_id only, no personal data). Confirms as\npolicy-consistent: rule 1 defines direct identifiers as name/contact/\nschool/age/photo, a bare student_id isn't on that list, and rule 2 requires\ndrops pre-stripped before `data-inbox/academic/` anyway. Sufficiency is\nconditional on two things holding at the actual export: (a) the\nstudent_id-to-identity mapping stays outside the repo, and (b) no other\ndirect identifier rides alongside student_id in the real file. Not yet\nverifiable, `data-inbox/academic/` is still empty, no export has landed.\n**Blockers:** None. Waiting on Barry to drop real usage/assessment data.\n**Needs Barry today:** None. Will re-check conditions (a)/(b) above against\nthe actual export the moment it lands, and re-raise ESC-20260705-COO-01 if\neither fails.\n"
         }
       ],
       "weeklyStatus": [],
