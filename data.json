@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T04:00:51.163Z",
+  "generatedAt": "2026-07-06T04:02:05.813Z",
   "departments": [
     {
       "key": "sales",
@@ -169,9 +169,9 @@
       "whyNotTier1": "Growth bet implying new time allocation/headcount\nper the escalation model.",
       "neededBy": "Next B2B pipeline planning cycle.",
       "crossDept": "Sales (B2B Sales Lead owns execution).",
-      "decision": "{pending}",
+      "decision": "okay, if principal-level conversations need to be done, then develop a target/kpi, a playbook, and a timeline to execute. _(via dashboard, 2026-07-06)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "43B2FC"
     },
     {
