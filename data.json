@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T05:37:54.941Z",
+  "generatedAt": "2026-07-06T17:38:58.511Z",
   "departments": [
     {
       "key": "sales",
@@ -111,14 +111,14 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-06.md",
-          "content": "# Product — Daily Check-in — 2026-07-06\n\n**Progress:** Consolidated 3 legacy product docs (back-office curriculum\nglossary, pedagogy explainer, parent user manual) into one internal\nknowledge base at `deliverables/product-knowledge-base.md`, built from\n`work-products/2026-07-product-doc-source-inventory.md`. Source files\narchived to `data-inbox/product/2026-07/`.\n**Blockers:** None.\n**Needs Barry today:** None. Flagged as open gaps in the knowledge base\n(Section 5), not blocking: undefined `INSIDEN*` back-office terms, and no\nconfirmed mapping between the PISA-domain framing and back-office\nFamily/Vertical fields.\n"
+          "content": "# Product — Daily Check-in — 2026-07-06\n\n**Progress:** Consolidated 3 legacy product docs (back-office curriculum\nglossary, pedagogy explainer, parent user manual) into one internal\nknowledge base at `deliverables/product-knowledge-base.md`, built from\n`work-products/2026-07-product-doc-source-inventory.md`. Source files\narchived to `data-inbox/product/2026-07/`. Looped the doc to all 6 other\nHeads for input, Academic and Sales responded same day, no narrative\nconflicts, one Section 5 gap partly closed (Academic offered to own the\nPISA-to-back-office mapping), two new items added on refund-policy and\npayment-methods verification.\n**Blockers:** None.\n**Needs Barry today:** None. Open items are logged in the knowledge base\nSection 5 and Review Log, not blocking: undefined `INSIDEN*` back-office\nterms, unverified refund policy and payment-methods list in Section 3\n(Sales flagged a three-way check with Finance is needed before that list\nis used for CAC-by-channel reporting).\n"
         }
       ],
       "weeklyStatus": [],
       "deliverables": [
         {
           "filename": "product-knowledge-base.md",
-          "sizeBytes": 13211,
+          "sizeBytes": 15108,
           "isDir": false
         }
       ],
