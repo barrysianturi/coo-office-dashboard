@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T02:46:26.967Z",
+  "generatedAt": "2026-07-06T02:52:44.749Z",
   "departments": [
     {
       "key": "sales",
@@ -22,12 +22,23 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-06.md",
-          "content": "# Business — Daily Check-in — 2026-07-06\n\n**Progress:** Filled out full sub-metric breakdown for both Business KPIs\nin `org/kpi-dashboard.md` (previously blank since dept standup). Logged a\nlessons-learned entry on the gap.\n**Blockers:** `data-inbox/business/` has no data feed yet, competitor\nreview, pricing benchmarking, and market sizing all blocked pending real\ndata or a desk-research start.\n**Needs Barry today:** None. Flagging for awareness: Business Evaluation\nSpecialist can start public desk research on competitors as an interim\nsubstitute if no data feed is coming soon, say the word if you'd like that\nkicked off.\n"
+          "content": "# Business — Daily Check-in — 2026-07-06\n\n**Progress:** Filled out KPI sub-metric breakdown (earlier today). Then\nBarry shared the B2B tracker, B2C trackers, and Revenue MoM sheet.\nAnalyzed all three, wrote up\n`business/work-products/b2b-b2c-pipeline-financial-analysis-2026-07.md`,\nand built two strategy deliverables: `b2b-pathway-strategy-2026-07.md` and\n`b2c-game-plan-2026-07.md`. Raised 3 escalations\n(ESC-20260706-BUS-01/02/03: B2B Path Z resourcing, B2C discount/pricing\nreview, B2C churn-playbook execution gap plus a billing complaint\npattern).\n**Blockers:** None on Business's own work. The 3 escalations are blocked\non Barry's decision, and two of them need real Sales/CS/Finance execution\nBusiness cannot do itself.\n**Needs Barry today:** Review and decide ESC-20260706-BUS-01/02/03 in\n`org/escalation-log.md`.\n"
         }
       ],
       "weeklyStatus": [],
-      "deliverables": [],
-      "lessonsLearned": "# Business — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Business — 2026-07-06\n\n**Trigger:** First KPI dashboard pass since department stood up 2026-07-05.\nBoth Business KPIs had blank target/current/status rows in\n`org/kpi-dashboard.md`, and neither sub-metric breakdown matched the full\nset named in `business/SYSTEM-PROMPT.md` (pricing benchmarking and market\nsizing were missing from Market & competitor analysis; signal-to-decision\nlead time and recommendation-to-execution hit rate were missing from\nOne-step-ahead direction).\n**Source:** Self-observed.\n**Lesson:** A KPI with no sub-metric rows reads as \"no status\" instead of\n\"OFF TRACK.\" Always break a KPI into its full named sub-metrics\nimmediately on setup, even before any real data exists, so the dashboard\nreflects a true gap rather than an empty cell. Also: `data-inbox/business/`\nhas never received a feed from Barry, so competitor/pricing/market-sizing\nwork is currently blocked on either (a) Barry feeding real data, or (b)\nBusiness Evaluation Specialist starting public desk research as an\ninterim Tier 1 substitute.\n**Applies to:** Quarterly competitor review cadence, weekly KPI dashboard\nupdates.\n**Status:** Logged.\n"
+      "deliverables": [
+        {
+          "filename": "b2b-pathway-strategy-2026-07.md",
+          "sizeBytes": 4664,
+          "isDir": false
+        },
+        {
+          "filename": "b2c-game-plan-2026-07.md",
+          "sizeBytes": 4715,
+          "isDir": false
+        }
+      ],
+      "lessonsLearned": "# Business — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Business — 2026-07-06\n\n**Trigger:** Analyzing the B2B pipeline tracker (`Pipeline B2B` sheet) and\nB2C churn cohorts (`potential_churn_july2026` etc.) for the B2B/B2C\nstrategy pass.\n**Source:** Self-observed.\n**Lesson:** Two recurring tracker-hygiene patterns blocked cleaner\nanalysis and should be watched for in future pulls: (1) closed-won\nrecords disappearing from a pipeline sheet instead of being marked won,\nwhich makes win rate uncomputable from the sheet alone, seen in `Pipeline\nB2B` where zero rows show Onboarding = True despite real historical B2B\nrevenue existing; (2) two tracking columns disagreeing with each other,\nseen in `potential_churn_july2026` where 4 rows are marked \"Converted\"\nwhile \"1st contact\" is False for all of them. When a work product hits\neither pattern, flag it explicitly rather than picking one column to\ntrust silently, per the work-product rubric's \"numbers reconcile\"\ncriterion.\n**Applies to:** Any future pull from `Pipeline B2B`, `subs_temp`, or the\nchurn-cohort sheets in `B2C Sales Tracker`.\n**Status:** Logged.\n\n# Lesson — Business — 2026-07-06\n\n**Trigger:** First KPI dashboard pass since department stood up 2026-07-05.\nBoth Business KPIs had blank target/current/status rows in\n`org/kpi-dashboard.md`, and neither sub-metric breakdown matched the full\nset named in `business/SYSTEM-PROMPT.md` (pricing benchmarking and market\nsizing were missing from Market & competitor analysis; signal-to-decision\nlead time and recommendation-to-execution hit rate were missing from\nOne-step-ahead direction).\n**Source:** Self-observed.\n**Lesson:** A KPI with no sub-metric rows reads as \"no status\" instead of\n\"OFF TRACK.\" Always break a KPI into its full named sub-metrics\nimmediately on setup, even before any real data exists, so the dashboard\nreflects a true gap rather than an empty cell. Also: `data-inbox/business/`\nhas never received a feed from Barry, so competitor/pricing/market-sizing\nwork is currently blocked on either (a) Barry feeding real data, or (b)\nBusiness Evaluation Specialist starting public desk research as an\ninterim Tier 1 substitute.\n**Applies to:** Quarterly competitor review cadence, weekly KPI dashboard\nupdates.\n**Status:** Logged.\n"
     },
     {
       "key": "hr-ga",
@@ -115,6 +126,70 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Business — 2026-07-06",
+      "department": "Business",
+      "date": "2026-07-06",
+      "id": "ESC-20260706-BUS-03",
+      "tier": "3 (real-world execution)",
+      "issue": "Analysis of the B2C tracker (`Dashboard PS.xlsx`, `B2C Sales\nTracker (1).xlsx`) found a fully written churn-prevention playbook\n(`Conversation Playbook` sheet, attendance-tier segmented WhatsApp/email\nscripts) with 0% logged execution against 656 combined at-risk records\nacross three cohorts, one of them (`still_churn_june2026`, 96 records)\nalready a month stale. Separately, `Users Insight` shows at least two\ncustomer complaints describing repeated/duplicate debit card charges\nafter requesting cancellation, a billing-trust issue distinct from price\nsensitivity. Full detail:\n`business/deliverables/b2c-game-plan-2026-07.md`.",
+      "recommendation": "Route to whoever owns B2C CS/Sales execution to run\nthe existing playbook against the backlog starting with the oldest\ncohort, and route the duplicate-charge pattern to whoever owns the\npayment gateway/billing system to check for a systemic double-charge bug\nbefore it is treated as a messaging or retention problem.",
+      "whyNotTier1": "This requires real people to physically send\nmessages and investigate a billing system. Business can identify the gap\nand prioritize the list, it cannot execute the outreach or debug billing\ninfrastructure itself.",
+      "neededBy": "This week, the oldest cohort is already stale by\na month and compounding.",
+      "crossDept": "Sales (B2C Sales & CS Lead owns execution),\nFinance (billing/payment gateway ownership unclear from Business's view,\nBarry to confirm who owns it).",
+      "decision": "{pending}",
+      "delegatedTo": "{pending, Barry to assign}",
+      "pending": true,
+      "accent": "43B2FC"
+    },
+    {
+      "heading": "Escalation — Business — 2026-07-06",
+      "department": "Business",
+      "date": "2026-07-06",
+      "id": "ESC-20260706-BUS-02",
+      "tier": "2 (approval)",
+      "issue": "B2C unit economics are compressing while the active base\ngrows: ARPPU fell 24% (Rp140,064 to Rp105,860) from Dec 2025 to Jun 2026\nwhile discount cost climbed from a ~20% floor to 39-53% of gross revenue\nin the last three complete months. Lifetime discount rate across 4,399\nsubscription records is 35.68%, with `CONTRATO_70` (70% off, 45 charges)\namong the active discount codes. Full detail:\n`business/deliverables/b2c-game-plan-2026-07.md`,\n`business/work-products/b2b-b2c-pipeline-financial-analysis-2026-07.md`.",
+      "recommendation": "Review the discount ladder before any new\ndiscount-led acquisition push. Business (Pricing & Unit Economics\nSpecialist) can model discount-tier impact on ARPPU/CLV if given the\ngreen light and the discount-code definitions from whoever owns the\nbilling system.",
+      "whyNotTier1": "Any pricing recommendation is Tier 2 per the\nescalation model, this touches the live discount ladder.",
+      "neededBy": "Before the next discount-led campaign is planned.",
+      "crossDept": "Sales (executes any discount ladder change),\nFinance (margin impact).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "43B2FC"
+    },
+    {
+      "heading": "Escalation — Business — 2026-07-06",
+      "department": "Business",
+      "date": "2026-07-06",
+      "id": "ESC-20260706-BUS-01",
+      "tier": "2 (approval)",
+      "issue": "B2B pipeline analysis (`Pipeline B2B` sheet, 51 active rows)\nfound Path Z (school principal outreach, foundation-funded) has the best\nper-lead hit rate of the three pathways, 2 of 3 leads Hot, one at MoU,\nversus 1 Hot of 16 for Path X and 0 Hot of 30 for Path Y, but is also by\nfar the smallest and least resourced pathway. Full detail:\n`business/deliverables/b2b-pathway-strategy-2026-07.md`.",
+      "recommendation": "Deliberately grow Path Z volume given its early hit\nrate, which means a real decision on who spends time running\nprincipal-level conversations, a resourcing and time-allocation call, not\nsomething Business can decide unilaterally.",
+      "whyNotTier1": "Growth bet implying new time allocation/headcount\nper the escalation model.",
+      "neededBy": "Next B2B pipeline planning cycle.",
+      "crossDept": "Sales (B2B Sales Lead owns execution).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "43B2FC"
+    },
+    {
+      "heading": "Escalation — Marketing — 2026-07-06",
+      "department": "Marketing",
+      "date": "2026-07-06",
+      "id": "ESC-20260706-MKT-01",
+      "tier": "2 (approval)",
+      "issue": "Reviewing the NAY campaign kickoff (`2026 NAY Campaign - Math\nit Fun.pdf`) against the standing brand strategy doc\n(`Smartick Indonesia Brand Strategy.pdf`) found the brand positioning has\nnot been refreshed since early launch. That doc's own GTM targets (700\nfollowers, 100 email signups) describe a pre-launch brand; current state\nis 45.2K IG followers and an established offline presence per the NAY\ndeck. Separately, the brand strategy never once addresses B2B, despite\n`org/org-chart.md` already listing a standing B2B Sales Lead, B2B\nBusiness Development Specialist, and B2B Account Officer under Sales. A\nfirst-pass competitor analysis found KooBits already sells at the\nschool/cluster level in the region, a direct B2B threat with zero\nMarketing response. Full detail and first-pass drafts:\n`marketing/work-products/competitor-analysis-2026.md`,\n`marketing/work-products/icp-b2c-b2b-2026.md`,\n`marketing/work-products/brand-positioning-workplan.md`.",
+      "recommendation": "Approve the workplan as drafted and relay these four\nasks: (1) Business, confirm whether a competitor review is already\nplanned this quarter under their own \"Market & competitor analysis\" KPI\nso the work in `competitor-analysis-2026.md` isn't duplicated; (2) Sales,\nvalidate or correct the first-draft B2B ICP against any real school\nconversations already had, this is the most time-sensitive ask since\nMarketing should not build B2B-facing brand material against an\nunvalidated buyer profile while a competitor is already active there; (3)\nAcademic, what learning-outcome data exists or is planned that could\nsubstantiate \"confidence-building\" and \"holistic learning\" claims; (4)\nProduct, any usability data supporting \"practicality\"/\"on-the-go\" claims,\nlower priority than (3).",
+      "whyNotTier1": "A brand narrative rewrite and net-new B2B\npositioning material materially affect brand positioning\n(`marketing/SYSTEM-PROMPT.md` Tier 2 threshold), and three of the four\nasks require input this department cannot generate itself from other\ndepartments' real data.",
+      "neededBy": "Not blocking this week, but the B2B ask (Sales)\nshould be prioritized since a competitor is already selling into that\nsegment and Marketing has nothing to counter it with.",
+      "crossDept": "Business (competitor-analysis KPI overlap,\nflagged so as not to duplicate effort), Sales (B2C ICP correction, B2B\nICP validation), Academic and Product (proof-point data for\ndifferentiation claims).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "99417A"
+    },
     {
       "heading": "Escalation - COO Office - 2026-07-05",
       "department": "COO Office",
@@ -239,7 +314,7 @@
         "kpi": "Market & competitor analysis",
         "subMetric": "Quarterly competitor review",
         "target": "1 per quarter",
-        "current": "Not started, dept stood up 2026-07-05, no data-inbox feed yet",
+        "current": "Not yet done as a formal review, but one competitor (Matific) surfaced incidentally in 2026-07-06 B2C churn-data pass, see `business/deliverables/b2c-game-plan-2026-07.md`",
         "status": "OFF TRACK",
         "accent": "43B2FC"
       },
@@ -266,8 +341,8 @@
         "kpi": "One-step-ahead direction",
         "subMetric": "Opportunities evaluated/quarter",
         "target": "≥3",
-        "current": "0 this quarter",
-        "status": "OFF TRACK",
+        "current": "3 this quarter (2026-07-06, from B2B/B2C tracker analysis: Path Z resourcing, discount ladder review, churn-playbook execution gap), see ESC-20260706-BUS-01/02/03",
+        "status": "ON TRACK",
         "accent": "43B2FC"
       },
       {
@@ -275,8 +350,8 @@
         "kpi": "One-step-ahead direction",
         "subMetric": "Signal-to-decision lead time",
         "target": "≤14 days",
-        "current": "No signals logged yet",
-        "status": "OFF TRACK",
+        "current": "0 days for this batch, Barry shared trackers and escalation-ready recommendations went out same day, 2026-07-06",
+        "status": "ON TRACK",
         "accent": "43B2FC"
       },
       {
@@ -284,7 +359,7 @@
         "kpi": "One-step-ahead direction",
         "subMetric": "Recommendation-to-execution hit rate",
         "target": "≥70%",
-        "current": "No recommendations made yet",
+        "current": "0/3 executed yet, all 3 pending Barry's decision",
         "status": "OFF TRACK",
         "accent": "43B2FC"
       },
