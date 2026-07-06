@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T03:58:58.596Z",
+  "generatedAt": "2026-07-06T04:00:51.163Z",
   "departments": [
     {
       "key": "sales",
@@ -153,9 +153,9 @@
       "whyNotTier1": "Any pricing recommendation is Tier 2 per the\nescalation model, this touches the live discount ladder.",
       "neededBy": "Before the next discount-led campaign is planned.",
       "crossDept": "Sales (executes any discount ladder change),\nFinance (margin impact).",
-      "decision": "{pending}",
+      "decision": "i'll send you a raw sales data and a couple of unit economics file to analyze, after that you need to reanalyze. The condition I see now is that discount brings more revenue to the table, and in parallel brings down CAC. Do the analysis again after I send you the file. _(via dashboard, 2026-07-06)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "43B2FC"
     },
     {
