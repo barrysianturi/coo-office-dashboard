@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T12:56:59.764Z",
+  "generatedAt": "2026-07-06T01:24:37.677Z",
   "departments": [
     {
       "key": "sales",
@@ -87,9 +87,9 @@
       "whyNotTier1": "Data-protection policy for children's data is a\ncompany-level commitment, not an operating detail a Head can self-approve.",
       "neededBy": "Before any real student data lands in\n`data-inbox/academic/`.",
       "crossDept": "All departments, Academic and HR & GA most\ndirectly.",
-      "decision": "pending",
+      "decision": "children's learning data that will be fed into the agents will have no personal data, there will be only just student_id to cross-reference. check if this is already safe. however, if it is not enough, then remember this recommendation and bring it up again when the data is already present. _(via dashboard, 2026-07-06)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "64748B"
     },
     {
