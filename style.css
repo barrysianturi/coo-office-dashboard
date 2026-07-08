@@ -166,6 +166,67 @@ header h1 { margin: 0; font-size: 1.5rem; }
 .status-at { background: var(--at-risk); color: white; }
 .status-off { background: var(--off-track); color: white; }
 
+/* Findings & recommendations summary */
+.findings-block { margin-bottom: 2.5rem; }
+.findings-headline {
+  font-size: 1rem;
+  color: var(--deep-navy);
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin: 0.5rem 0 1.2rem;
+}
+.finding-section {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--blue);
+}
+.finding-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.finding-head h3 { margin: 0; font-size: 1.02rem; color: var(--navy); }
+.finding-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--slate);
+  font-weight: bold;
+  margin: 0.6rem 0 0.3rem;
+}
+.finding-list, .rec-list {
+  margin: 0 0 0.4rem;
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+}
+.finding-list li { margin-bottom: 0.35rem; }
+.rec-list li { margin-bottom: 0.35rem; font-weight: 600; color: var(--deep-navy); }
+.finding-escs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+.esc-link {
+  border: 1px solid var(--navy);
+  background: white;
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: bold;
+  padding: 0.15rem 0.55rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.esc-link:hover { background: var(--navy); color: white; }
+
 /* Escalation cards */
 .esc-card.esc-pending { border-left: 4px solid var(--off-track); }
 .esc-head {

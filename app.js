@@ -296,6 +296,61 @@ function deliverableRow(file) {
   return row;
 }
 
+function escJumpChip(escId) {
+  const chip = el("button", "esc-link", escId);
+  chip.addEventListener("click", () => showTab("decisions"));
+  return chip;
+}
+
+function findingsSection(section) {
+  const card = el("div", "finding-section");
+
+  const head = el("div", "finding-head");
+  head.appendChild(el("h3", null, section.title));
+  if (section.status) head.appendChild(el("span", "badge " + statusClass(section.status), section.status));
+  card.appendChild(head);
+
+  if (section.findings && section.findings.length) {
+    card.appendChild(el("div", "finding-label", "Findings"));
+    const ul = el("ul", "finding-list");
+    section.findings.forEach((f) => ul.appendChild(el("li", null, f)));
+    card.appendChild(ul);
+  }
+
+  if (section.recommendations && section.recommendations.length) {
+    card.appendChild(el("div", "finding-label", "Recommendations"));
+    const ul = el("ul", "rec-list");
+    section.recommendations.forEach((r) => ul.appendChild(el("li", null, r)));
+    card.appendChild(ul);
+  }
+
+  if (section.escalations && section.escalations.length) {
+    const row = el("div", "finding-escs");
+    row.appendChild(el("span", "esc-label", "See Decisions tab"));
+    section.escalations.forEach((id) => row.appendChild(escJumpChip(id)));
+    card.appendChild(row);
+  }
+
+  if (section.source) {
+    card.appendChild(el("p", "esc-hint", "Full detail: " + section.source));
+  }
+
+  return card;
+}
+
+function renderFindings(findings) {
+  const wrap = el("div", "block findings-block");
+  wrap.appendChild(el("h2", null, "Findings & Recommendations"));
+  if (findings.updatedAt) {
+    wrap.appendChild(el("p", "esc-hint", "Updated " + findings.updatedAt));
+  }
+  if (findings.headline) {
+    wrap.appendChild(el("p", "findings-headline", findings.headline));
+  }
+  (findings.sections || []).forEach((s) => wrap.appendChild(findingsSection(s)));
+  return wrap;
+}
+
 function renderDepartment(dept) {
   const section = el("section", "dept-section");
   section.id = `tab-${dept.key}`;
@@ -303,6 +358,10 @@ function renderDepartment(dept) {
   const title = el("div", "dept-title", dept.name);
   title.style.borderColor = `#${dept.accent}`;
   section.appendChild(title);
+
+  if (dept.findings) {
+    section.appendChild(renderFindings(dept.findings));
+  }
 
   section.appendChild(block("Daily Check-ins", dept.dailyCheckins, markdownEntryCard));
   section.appendChild(block("Weekly Status", dept.weeklyStatus, markdownEntryCard));
