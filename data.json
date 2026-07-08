@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T10:24:35.476Z",
+  "generatedAt": "2026-07-08T10:26:27.892Z",
   "departments": [
     {
       "key": "sales",
@@ -7,13 +7,23 @@
       "accent": "FBA62D",
       "dailyCheckins": [
         {
+          "filename": "2026-07-08.md",
+          "content": "# Sales — Daily Check-in — 2026-07-08\n\n**Progress:** First real-world input landed (Izzah's CS ops deck).\nSynthesized it with Business's B2C funnel/churn and B2B pipeline analyses\ninto `sales/deliverables/2026-07-08-sales-organization-strategy.md`:\nCS/Outbound jobdesk split, B2C execution sequencing (activation sampling\n> churn backlog > discount ladder), B2B Path Z playbook/KPI/timeline per\nBarry's 07-06 ask, and updated `org/kpi-dashboard.md` Sales rows with\nreal sourced numbers for the first time.\n**Blockers:** None blocking today's output, but real execution capacity\nis the open question, see escalations below.\n**Needs Barry today:** Two new escalations logged, `ESC-20260708-SALES-01`\n(real staffing decision, current CS/Outbound headcount cannot absorb the\nchurn backlog, activation sampling, and Path Z growth at once) and\n`ESC-20260708-SALES-02` (Outbound phone number, blast-cadence time,\nfreelance-hiring policy).\n"
+        },
+        {
           "filename": "2026-07-06.md",
           "content": "# Sales — Daily Check-in — 2026-07-06\n\n**Progress:** No activity since yesterday.\n**Blockers:** None.\n**Needs Barry today:** None.\n"
         }
       ],
       "weeklyStatus": [],
-      "deliverables": [],
-      "lessonsLearned": "# Sales — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n",
+      "deliverables": [
+        {
+          "filename": "2026-07-08-sales-organization-strategy.md",
+          "sizeBytes": 11170,
+          "isDir": false
+        }
+      ],
+      "lessonsLearned": "# Sales — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Sales — 2026-07-08\n\n**Trigger:** First real-world operational input (Izzah's CS deck) landed\nalongside Business's B2C/B2B tracker analyses, all pointing at the same\nroot cause from different angles: capacity and jobdesk clarity, not\nstrategy or lead supply.\n**Source:** Internal (virtual staff feedback, distilled from a real CS\nofficer's own account) plus escalation-outcome context (Barry's prior\ndecisions on `ESC-20260706-BUS-01/02/03`).\n**Lesson:** When multiple upstream findings all recommend \"just execute\nthe existing plan,\" check who is actually available to execute before\nsequencing the work, otherwise the plan looks Tier 1 (Sales can just do\nit) when it is really Tier 3 (needs a real staffing decision first). Real\noperational detail from an actual staff member surfaces this faster than\ntracker data alone.\n**Applies to:** any future execution ask that lands on the B2C CS/Sales\nor B2B Sales function, check current real headcount and training state\nbefore committing to a timeline.\n**Status:** Logged.\n\n# Lesson — Sales — 2026-07-08\n\n**Trigger:** Izzah's account of the NAY-campaign freelance CS hire.\n**Source:** Internal (virtual staff feedback, real-world account).\n**Lesson:** Ad hoc freelance CS support without a named trainer and a\nminimum onboarding runway costs more than it returns, freelancers\nwithout product knowledge cannot activate accounts or handle\npost-activation questions, so the core CS agent ends up doing that work\nanyway on top of onboarding the freelancer.\n**Applies to:** any future CS surge-staffing decision (campaign periods,\nseasonal spikes). Logged to `ESC-20260708-SALES-02` as a policy ask.\n**Status:** Logged.\n",
       "findings": null
     },
     {
@@ -221,6 +231,38 @@
   ],
   "escalations": [
     {
+      "heading": "Escalation — Sales — 2026-07-08",
+      "department": "Sales",
+      "date": "2026-07-08",
+      "id": "ESC-20260708-SALES-01",
+      "tier": "3 (real-world execution)",
+      "issue": "Real operational input from Izzah (CS Officer, Inbound, source\ndeck reproduced in `sales/work-products/2026-07-08-b2c-cs-inbound-ops-notes.md`)\nconfirms B2C CS is one person handling two channels (WhatsApp, Qiscus),\nevery case type end to end, and daily blast duties, with no T2 CS tier\nand no quality-assessment function (Outbound agents' chat quality is\ncurrently monitored only by informal, non-real-time recap). At the same\ntime, three upstream mandates now land on this same small team: the\n656-record churn backlog (`ESC-20260706-BUS-03`, execution already\napproved by Barry as Sales's job), a new ~41,000-registrant activation\ngap needing sample outreach (`ESC-20260708-BUS-02`), and B2B Path Z\ngrowth (`ESC-20260706-BUS-01`, approved by Barry). A prior freelance\nsurge-hire during the NAY campaign period cost more than it returned,\nfreelancers without product-knowledge onboarding could not activate\naccounts or handle post-activation questions, pushing the work back onto\nCS anyway. Full detail: `sales/deliverables/2026-07-08-sales-organization-strategy.md`.",
+      "recommendation": "Sequence the work as laid out in the strategy doc\n(activation sampling, then churn backlog, then B2B Path Z), and make a\nreal staffing decision alongside it, either a dedicated T2/CS hire, a\nreallocation of hours from another real role, or an explicit acceptance\nthat some of the above will slip. Do not repeat the NAY freelance\napproach without dedicated onboarding time and a real trainer, per\n`ESC-20260708-SALES-02`.",
+      "whyNotTier1": "This requires a real hiring or reallocation\ndecision involving real people (Izzah, Kak Runi, Kak Vamel), Sales can\nsequence and prioritize but cannot create headcount or reallocate real\nstaff time itself.",
+      "neededBy": "Before committing to the Path Z 45-day timeline\nor promising execution speed on the churn/activation backlog, since the\nsequencing in the strategy doc assumes current headcount and will slip\nwithout a decision either way.",
+      "crossDept": "HR & GA (any real hire or role-scope change\nroutes through their span-of-control process), Business (recommendation-\nto-execution hit rate on `ESC-20260706-BUS-01/03` and `ESC-20260708-BUS-02`\ndepends on this getting resourced).",
+      "decision": "{pending}",
+      "delegatedTo": "{pending, Barry to assign}",
+      "pending": true,
+      "accent": "FBA62D"
+    },
+    {
+      "heading": "Escalation — Sales — 2026-07-08",
+      "department": "Sales",
+      "date": "2026-07-08",
+      "id": "ESC-20260708-SALES-02",
+      "tier": "2 (approval)",
+      "issue": "Izzah's ops notes surface four concrete operational asks that\nneed Barry's decision, not Sales's: (1) B2C Sales (Outbound) needs its\nown phone number, separate from the CS/PS line, currently mixed\ntogether; (2) a routine blast schedule needs a fixed time set by Barry\n(Izzah's own example: a fixed WA Biz list worked at 1pm daily) so users\nare not left unhandled after off-duty hours; (3) named user ownership\nbetween Izzah, Kak Runi, and Kak Vamel is currently implicit, not\nassigned; (4) a go-forward policy on freelance CS support, the NAY-period\nfreelance hire was a net cost given no dedicated trainer and no onboarding\nrunway (see `ESC-20260708-SALES-01`). Full detail:\n`sales/work-products/2026-07-08-b2c-cs-inbound-ops-notes.md` (sections 6-7,\n9), `sales/deliverables/2026-07-08-sales-organization-strategy.md`.",
+      "recommendation": "Approve a dedicated Outbound phone number; set the\ndaily blast-cadence time; Sales will propose the specific user-ownership\nsplit for Barry's sign-off once approved in principle; adopt a policy of\nno ad hoc freelance CS support without a named trainer and minimum\nonboarding runway before the freelancer takes live chats.",
+      "whyNotTier1": "Items 1-2 involve real resources (a phone\nnumber, a company-wide schedule mandate) Sales cannot provision or\nmandate itself; item 4 is a hiring-policy call.",
+      "neededBy": "Before the next blast cycle or freelance-hiring\nneed arises, whichever comes first.",
+      "crossDept": "HR & GA (freelance-hiring policy touches\ntheir recruiting/staffing process).",
+      "decision": "{pending}",
+      "delegatedTo": "{pending, Barry to assign}",
+      "pending": true,
+      "accent": "FBA62D"
+    },
+    {
       "heading": "Escalation — Business — 2026-07-08",
       "department": "Business",
       "date": "2026-07-08",
@@ -419,9 +461,9 @@
         "dept": "Sales",
         "kpi": "Sales target achieved",
         "subMetric": "Revenue vs. target",
-        "target": "",
-        "current": "",
-        "status": "",
+        "target": "(no formal target set yet)",
+        "current": "+18% MoM Dec25-Jun26 (Rp44.7M to Rp52.8M), bought with discount cost climbing to 39-53% of gross revenue against a 24% ARPPU decline in the same window, see `sales/deliverables/2026-07-08-sales-organization-strategy.md`",
+        "status": "AT RISK",
         "accent": "FBA62D"
       },
       {
@@ -429,8 +471,8 @@
         "kpi": "Sales target achieved",
         "subMetric": "B2C conversion rate",
         "target": "",
-        "current": "",
-        "status": "",
+        "current": "3-6% (Jun 2026 window) vs. 12-14% in H1 2025; new full-funnel data shows 88.3% of lost registrants barely opened the app, price/churn is not the main driver, see `business/deliverables/b2c-trial-activation-priority-2026-07-08.md`",
+        "status": "OFF TRACK",
         "accent": "FBA62D"
       },
       {
@@ -438,8 +480,8 @@
         "kpi": "Sales target achieved",
         "subMetric": "B2B win rate",
         "target": "",
-        "current": "",
-        "status": "",
+        "current": "Not computable yet, pipeline tracker drops closed-won rows instead of marking Onboarded (0 of 51 active rows marked Onboarding=True despite real historical B2B revenue). Path Z (principal outreach) has the best per-lead hit rate, 2 of 3 Hot, and is the least resourced pathway, growth plan in `sales/deliverables/2026-07-08-sales-organization-strategy.md`",
+        "status": "OFF TRACK",
         "accent": "FBA62D"
       },
       {
@@ -447,7 +489,7 @@
         "kpi": "Healthy acquisition cost",
         "subMetric": "LTV:CAC",
         "target": "≥1.93x",
-        "current": "",
+        "current": "Blank, pending Finance's CAC-tag mechanism (`finance/daily-checkins/2026-07-06.md`) and Business's discount-vs-CAC reanalysis (`ESC-20260706-BUS-02`)",
         "status": "",
         "accent": "FBA62D"
       },
@@ -641,6 +683,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-08 (Business rows only, by Business)"
+    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-08 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales)"
   }
 }
