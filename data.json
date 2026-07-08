@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T05:53:43.592Z",
+  "generatedAt": "2026-07-08T05:56:01.416Z",
   "departments": [
     {
       "key": "sales",
@@ -45,6 +45,10 @@
       "name": "HR & General Affairs",
       "accent": "9C77CF",
       "dailyCheckins": [
+        {
+          "filename": "2026-07-08.md",
+          "content": "# HR & GA — Daily Check-in — 2026-07-08\n\n**Progress:** Adopted the new git protocol (isolated worktree, branch +\nPR, own-directory-only). Executed the 3 decisions Barry made on prior\nescalations: updated the human org chart and SOW draft for Siti replacing\nMaura and Agnes's expanded CMO-reporting scope; recruited the Legal &\nCompliance Specialist virtual role and had it genericize the PKWT/PKWTT\ntemplates and move the shareholder clause to a standalone addendum;\nupdated the KPI dashboard's contracts-compliance row to reflect the\ncorrespondence-backlog resolution (mixed real/stale, Septi collecting\nsigned copies going forward).\n**Blockers:** None.\n**Needs Barry today:** One new Tier 2 item, the shareholder clause move\nsurfaced broken Pasal cross-references in the PKWT template (points to\nPasal 10/12/13 that don't exist in this document), needs real legal\nreview before either the template or its new addendum is used on a hire.\n"
+        },
         {
           "filename": "2026-07-06.md",
           "content": "# HR & GA — Daily Check-in — 2026-07-06\n\n**Progress:** Barry ruled on 2 of the 3 open escalations from yesterday via\nthe dashboard: (1) org chart confirmed as the version with a vacant\nOperations Lead, Maura to be replaced by Siti (last day end of July 2026),\nAgnes's scope expands to Community & Partnerships reporting to CMO from\nW2 July, to be announced at Wednesday's townhall; (2) approved recruiting\na Legal & Compliance Specialist to review and genericize the PKWT\ntemplate. Neither has been executed yet, next up.\n**Blockers:** None.\n**Needs Barry today:** Nothing new, still waiting on the correspondence\nbacklog escalation (unsigned contracts) and the COO Office's Student Data\nPolicy, both still pending.\n"
@@ -134,6 +138,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — HR & GA — 2026-07-08",
+      "department": "HR & GA",
+      "date": "2026-07-08",
+      "id": "ESC-20260708-HRGA-01",
+      "tier": "2 (approval)",
+      "issue": "Executing the approved PKWT template fix (genericize role/date\nfields, move the shareholder clause to an addendum, see\n`hr-ga/work-products/tier1-review-sop-and-contracts.md`) surfaced a second\ndefect: the shareholder clause references \"Pasal 12 ayat 2 dan 3\" and\n\"Pasal 13\", and the termination clause references \"Pasal 10\", but the\nPKWT template only has 10 Pasal total, and Pasal 10 is the closing/\nsignature section, not a termination procedure. These are broken\ncross-references, most likely leftover from a longer source document the\ntemplate was cut down from, present in both the main template and the new\n`kontrak-pkwt-shareholder-addendum.docx`.",
+      "recommendation": "Get real legal review on what Pasal 10 (termination)\nand the addendum's Pasal 12/13 references should actually say, then fix\nthe numbering or rewrite the clauses standalone. Do not use either\ndocument on a real hire until this is resolved, the current text points\nto provisions that don't exist.",
+      "whyNotTier1": "Rewriting what a termination or share-vesting\nclause should legally say is substantive legal work, not something HR &\nGA (or its Legal & Compliance Specialist) should draft unreviewed.",
+      "neededBy": "Before either template's next real use for a\nhire.",
+      "crossDept": "None identified.",
+      "decision": "pending",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "9C77CF"
+    },
     {
       "heading": "Escalation — Business — 2026-07-06",
       "department": "Business",
@@ -394,7 +414,7 @@
         "kpi": "Legal compliance",
         "subMetric": "Contracts reviewed pre-execution",
         "target": "100%",
-        "current": "38 correspondence-log entries flagged Unsigned, several are contracts/SPKs 5+ months past the SOP's 1-2 day signing SLA, see escalation log",
+        "current": "Barry confirmed 2026-07-06: mix of genuinely unsigned and tracker-not-updated, Septi collecting signed copies, backdating the old ones deprioritized. Go-forward fix: signed copies attached for every new document. See escalation log",
         "status": "AT RISK",
         "accent": "9C77CF"
       },
@@ -507,6 +527,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-05 (HR & GA rows only, by HR & GA); 2026-07-06 (Business rows only, by Business)"
+    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-06 (Business rows only, by Business)"
   }
 }
