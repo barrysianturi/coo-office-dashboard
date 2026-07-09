@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T12:05:58.525Z",
+  "generatedAt": "2026-07-09T15:05:38.336Z",
   "departments": [
     {
       "key": "sales",
@@ -230,6 +230,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Finance — 2026-07-09",
+      "department": "Finance",
+      "date": "2026-07-09",
+      "id": "ESC-20260709-FIN-01",
+      "tier": "2 (approval)",
+      "issue": "Barry asked Finance to break Xendit revenue into prepaid\nrevenue, subscription revenue already recognized/used, and payment\ngateway fee. The gateway fee and gross/net cash flow are fully computable\nfrom Xendit data (Rp23,456,516 total fee, Feb 2025-Jun 2026, see\n`finance/work-products/xendit-revenue-breakdown-2025-2026.md`), but the\nprepaid-vs-recognized split needs per-subscription plan data (plan\nlength, start date, pause/cuti status) that the payment gateway export\ndoes not contain. Checked whether transaction amount could substitute:\nit can't, top price points don't fall on clean multiples of a base price,\nconsistent with Business's ~35.68% average discount finding\n(ESC-20260706-BUS-02), so amount-based inference risks a materially wrong\ndeferred-revenue split.",
+      "recommendation": "Point Finance to the subscription/billing system's\ndata source (plan type, start date, status per subscription), likely\nowned by Product or wherever the billing backend lives. Once available,\nAccounting Officer can build a proper amortization schedule that also\naccounts for \"cuti\" pauses extending the recognition period.",
+      "whyNotTier1": "Requires access to a data source Finance doesn't\ncurrently have and doesn't know the owner of, not something resolvable\nfrom data already in `data-inbox/finance/`.",
+      "neededBy": "Before the prepaid/recognized revenue split can\nbe completed, no hard deadline otherwise.",
+      "crossDept": "Likely Product (billing/subscription system\nownership unconfirmed from Finance's view, Barry to confirm who owns it).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "1B8A5E"
+    },
     {
       "heading": "Escalation — Sales — 2026-07-08",
       "department": "Sales",
