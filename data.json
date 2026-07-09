@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T10:26:27.892Z",
+  "generatedAt": "2026-07-09T02:48:34.526Z",
   "departments": [
     {
       "key": "sales",
@@ -206,7 +206,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-08.md",
-          "content": "# Product, Daily Check-in, 2026-07-08\n\n**Progress:** Added core-app subscription pricing to Section 3 of\n`deliverables/product-knowledge-base.md`: the list-price table, the\n25%-off evergreen advertised rate (cross-checked against a public\npricing flyer), and 5 confidently-identified discount campaign codes.\nCorrected the Rp4,500 admin fee's scope (applies to every checkout, not\njust WhatsApp). Folded in Finance's transaction-review finding\n(`finance/staff-logs/accounting-officer-log.md`) that real refund amounts\nare too small to be full annual-plan refunds, upgrading the refund-policy\nline from \"unverified\" to a confirmed policy-vs-practice gap. Also\nadopted the new isolated-worktree git protocol (`org/git-protocol.md`)\nfor this session.\n**Blockers:** None blocking, but flagged one process question: the new\n`pr-scope-check` CI does not allow a `product/*` branch to touch\n`data-inbox/product/`, so this round's 2 pricing source files could not\nbe archived there. Logged in Section 6 and left with Barry in the\ninterim.\n**Needs Barry today:** A ruling on where department source material\nshould be archived under the new protocol (`data-inbox/{dept}/` is not\ncurrently in the `pr-scope-check` allowlist). Not urgent, not blocking\nthis PR.\n"
+          "content": "# Product, Daily Check-in, 2026-07-08\n\n**Progress:** Added core-app subscription pricing to Section 3 of\n`deliverables/product-knowledge-base.md`: the list-price table, the\n25%-off evergreen advertised rate (cross-checked against a public\npricing flyer), and 5 confidently-identified discount campaign codes.\nCorrected the Rp4,500 admin fee's scope (applies to every checkout, not\njust WhatsApp). Folded in Finance's transaction-review finding\n(`finance/staff-logs/accounting-officer-log.md`) that real refund amounts\nare too small to be full annual-plan refunds, upgrading the refund-policy\nline from \"unverified\" to a confirmed policy-vs-practice gap. Also\nadopted the new isolated-worktree git protocol (`org/git-protocol.md`)\nfor this session.\n**Blockers:** None blocking, but flagged one process question: the new\n`pr-scope-check` CI does not allow a `product/*` branch to touch\n`data-inbox/product/`, so this round's 2 pricing source files could not\nbe archived there. Logged in Section 6 and left with Barry in the\ninterim.\n**Needs Barry today:** A ruling on where department source material\nshould be archived under the new protocol (`data-inbox/{dept}/` is not\ncurrently in the `pr-scope-check` allowlist). Not urgent, not blocking\nthis PR.\n\n**Progress (later same day):** Per Barry's request, scaffolded 5 new\nplaceholder subsections across Sections 2-4 of the knowledge base,\nstructure only, content to follow: visual example-question screenshots\n(Section 2); iOS/Android/Web platform differences, the report-a-question\nfeature, and a full Parent Page feature rundown (Section 3); and\nverifying a customer's price/payment in the back office (Section 4).\nAdded a tracking table in Section 6 so these read as intentional stubs,\nnot unfinished work.\n**Needs Barry today (addition):** the 5 new subsections need actual\ncontent, screenshots, and a back-office walkthrough per the Section 6\ntracking table.\n"
         },
         {
           "filename": "2026-07-07.md",
@@ -221,7 +221,7 @@
       "deliverables": [
         {
           "filename": "product-knowledge-base.md",
-          "sizeBytes": 32274,
+          "sizeBytes": 35586,
           "isDir": false
         }
       ],
