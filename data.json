@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T02:48:34.526Z",
+  "generatedAt": "2026-07-09T12:05:58.525Z",
   "departments": [
     {
       "key": "sales",
@@ -305,9 +305,9 @@
       "whyNotTier1": "Rewriting what a termination or share-vesting\nclause should legally say is substantive legal work, not something HR &\nGA (or its Legal & Compliance Specialist) should draft unreviewed.",
       "neededBy": "Before either template's next real use for a\nhire.",
       "crossDept": "None identified.",
-      "decision": "pending",
+      "decision": "Just assign a legal & compliance specialist subagent to review all the files. I guess it's just a miswriting. I can send you a newer PKWT and PKWTT files. Remind me tomorrow. _(via dashboard, 2026-07-09)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "9C77CF"
     },
     {
