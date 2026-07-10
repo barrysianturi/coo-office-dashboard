@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T09:02:02.531Z",
+  "generatedAt": "2026-07-10T11:42:49.250Z",
   "departments": [
     {
       "key": "sales",
@@ -146,6 +146,10 @@
       "name": "HR & General Affairs",
       "accent": "9C77CF",
       "dailyCheckins": [
+        {
+          "filename": "2026-07-10.md",
+          "content": "# HR & GA — Daily Check-in — 2026-07-10\n\n**Progress:** Reviewed a real, current PKWT contract Barry shared\n(HRGA-151/PKWT/V/2026) against the escalated Pasal cross-reference issue.\nExtracted the structural changes (updated Pasal 3/4/5, a new Lampiran I\nexplanation section) into `kontrak-pkwt-template.docx`, no personal data\nretained anywhere. Confirmed and closed one of the two broken references\n(Pasal 5's stale \"Pasal 10\" mention), confirmed the other (\"Pasal 13\" in\nPasal 6) is a live, active defect, not old cruft, still open.\n**Blockers:** None.\n**Needs Barry today:** Nothing new, `ESC-20260708-HRGA-01` (the Pasal 13\nreference) is still the one open item, needs real legal review, not\nanother template diff.\n"
+        },
         {
           "filename": "2026-07-08.md",
           "content": "# HR & GA — Daily Check-in — 2026-07-08\n\n**Progress:** Adopted the new git protocol (isolated worktree, branch +\nPR, own-directory-only). Executed the 3 decisions Barry made on prior\nescalations: updated the human org chart and SOW draft for Siti replacing\nMaura and Agnes's expanded CMO-reporting scope; recruited the Legal &\nCompliance Specialist virtual role and had it genericize the PKWT/PKWTT\ntemplates and move the shareholder clause to a standalone addendum;\nupdated the KPI dashboard's contracts-compliance row to reflect the\ncorrespondence-backlog resolution (mixed real/stale, Septi collecting\nsigned copies going forward).\n**Blockers:** None.\n**Needs Barry today:** One new Tier 2 item, the shareholder clause move\nsurfaced broken Pasal cross-references in the PKWT template (points to\nPasal 10/12/13 that don't exist in this document), needs real legal\nreview before either the template or its new addendum is used on a hire.\n"
