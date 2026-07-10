@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T11:54:40.523Z",
+  "generatedAt": "2026-07-10T11:57:44.441Z",
   "departments": [
     {
       "key": "sales",
@@ -259,9 +259,9 @@
       "whyNotTier1": "External funding application with legal\ndeclarations and real financial disclosures, and a threshold eligibility\nquestion Business cannot resolve or waive on its own.",
       "neededBy": "Today or tomorrow (2026-07-10/11) at the latest,\nto leave time for the confirmations above and actual online submission\nbefore the deadline.",
       "crossDept": "Finance (budget breakdown, financial\nfigures), HR (headcount confirmation), Barry/Galih (investor name,\neligibility judgment call, actual submission).",
-      "decision": "{pending}",
+      "decision": "yes, we will still submit and let the admission officer to decide _(via dashboard, 2026-07-10)_",
       "delegatedTo": "{pending, Barry to assign, actual online\nsubmission needs a human regardless of who else is involved}",
-      "pending": true,
+      "pending": false,
       "accent": "43B2FC"
     },
     {
