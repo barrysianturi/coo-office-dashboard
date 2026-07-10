@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T11:42:49.250Z",
+  "generatedAt": "2026-07-10T11:54:40.523Z",
   "departments": [
     {
       "key": "sales",
@@ -33,7 +33,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-10.md",
-          "content": "# Business — Daily Check-in — 2026-07-10\n\n**Progress:** Completed the draft DBS Foundation Grant application (up to\nSGD 250,000) Barry shared: filled every dropdown/checkbox answer, finished\ntwo cut-off sentences, updated the impacted-individuals count to Business's\nown current figure (43,837), and drafted a full grant-utilisation narrative\nwith a proposed SGD budget split. Every open item flagged for confirmation.\nSee `business/deliverables/dbs-foundation-grant-application-draft-2026-07-10.docx`\nand its cover notes.\n**Blockers:** Two things need Barry urgently, not something Business can\nresolve alone: the application deadline is 2026-07-13 23:59 SGT (3 days\naway), and there's a possible eligibility gap since the 2-year track\nrecord requirement isn't met until 2026-07-22 (9 days after the deadline).\n**Needs Barry today:** Review ESC-20260710-BUS-01 in `org/escalation-log.md`\ntoday or tomorrow at the latest, this is time-boxed by the grant deadline,\nnot the usual weekly cadence.\n"
+          "content": "# Business — Daily Check-in — 2026-07-10\n\n**Progress:** Completed the draft DBS Foundation Grant application (up to\nSGD 250,000) Barry shared: filled every dropdown/checkbox answer, finished\ntwo cut-off sentences, updated the impacted-individuals count to Business's\nown current figure (43,837), and drafted a full grant-utilisation narrative\nwith a proposed SGD budget split. Every open item flagged for confirmation.\nSee `business/deliverables/dbs-foundation-grant-application-draft-2026-07-10.docx`\nand its cover notes.\n**Blockers:** Two things need Barry urgently, not something Business can\nresolve alone: the application deadline is 2026-07-13 23:59 SGT (3 days\naway), and there's a possible eligibility gap since the 2-year track\nrecord requirement isn't met until 2026-07-22 (9 days after the deadline).\n**Needs Barry today:** Review ESC-20260710-BUS-01 in `org/escalation-log.md`\ntoday or tomorrow at the latest, this is time-boxed by the grant deadline,\nnot the usual weekly cadence.\n\n**Update (later same day):** Barry updated the DBS draft directly (named\nthe JV investors, added an accreditation, rewrote a few sections).\nConverted the embedded sibling-discount pricing image into readable text\nper Barry's request, since the real DBS form is online/text-only and\ncan't carry an inline image, and re-filled the remaining dropdown answers\nthat reset when this pass started from a fresh copy of the template. See\nupdated cover notes in `business/deliverables/`.\n"
         },
         {
           "filename": "2026-07-08.md",
@@ -63,12 +63,12 @@
         },
         {
           "filename": "dbs-foundation-grant-application-draft-2026-07-10-cover-notes.md",
-          "sizeBytes": 6789,
+          "sizeBytes": 5934,
           "isDir": false
         },
         {
           "filename": "dbs-foundation-grant-application-draft-2026-07-10.docx",
-          "sizeBytes": 326765,
+          "sizeBytes": 417905,
           "isDir": false
         }
       ],
