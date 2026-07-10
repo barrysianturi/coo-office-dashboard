@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T02:19:48.684Z",
+  "generatedAt": "2026-07-10T09:02:02.531Z",
   "departments": [
     {
       "key": "sales",
@@ -335,9 +335,9 @@
       "whyNotTier1": "First part updates an already-Tier-2 pricing\nquestion. Second part is a minor billing-taxonomy change that touches the\nlive discount system, treated as Tier 2 out of caution even though the\nvolume is immaterial (11 of 5,852 records).",
       "neededBy": "Alongside `ESC-20260706-BUS-02`.",
       "crossDept": "Finance/whoever owns the billing system\n(taxonomy change), Marketing (barter-deal cost should probably show up in\ntheir spend, not Business's discount metric).",
-      "decision": "{pending}",
+      "decision": "yes, i think contrato_100 should not be taken into consideration when you are looking at discounts. those are for internal usage, KOL, gifts, and some other similar stuff. redo the funnel analysis by taking this into acount. _(via dashboard, 2026-07-10)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "43B2FC"
     },
     {
