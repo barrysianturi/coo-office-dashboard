@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T15:05:38.336Z",
+  "generatedAt": "2026-07-10T02:19:48.684Z",
   "departments": [
     {
       "key": "sales",
@@ -32,6 +32,10 @@
       "accent": "43B2FC",
       "dailyCheckins": [
         {
+          "filename": "2026-07-10.md",
+          "content": "# Business — Daily Check-in — 2026-07-10\n\n**Progress:** Completed the draft DBS Foundation Grant application (up to\nSGD 250,000) Barry shared: filled every dropdown/checkbox answer, finished\ntwo cut-off sentences, updated the impacted-individuals count to Business's\nown current figure (43,837), and drafted a full grant-utilisation narrative\nwith a proposed SGD budget split. Every open item flagged for confirmation.\nSee `business/deliverables/dbs-foundation-grant-application-draft-2026-07-10.docx`\nand its cover notes.\n**Blockers:** Two things need Barry urgently, not something Business can\nresolve alone: the application deadline is 2026-07-13 23:59 SGT (3 days\naway), and there's a possible eligibility gap since the 2-year track\nrecord requirement isn't met until 2026-07-22 (9 days after the deadline).\n**Needs Barry today:** Review ESC-20260710-BUS-01 in `org/escalation-log.md`\ntoday or tomorrow at the latest, this is time-boxed by the grant deadline,\nnot the usual weekly cadence.\n"
+        },
+        {
           "filename": "2026-07-08.md",
           "content": "# Business — Daily Check-in — 2026-07-08\n\n**Progress:** Analyzed the full registrant DB export (72,905 rows, 43,837\nreal) and refreshed subscription ledger (5,852 charges) Barry shared.\nFound the B2C growth constraint is trial activation, not conversion\nquality or price: 88.3% of every lost registrant completed 0-2 sessions\nout of a 7-day trial, lifetime conversion is 5.0%. Wrote\n`business/work-products/b2c-full-funnel-analysis-2026-07-08.md` and\n`business/deliverables/b2c-trial-activation-priority-2026-07-08.md`.\nRaised ESC-20260708-BUS-01 (updates the still-open discount-ladder\nquestion with this data, plus a minor billing-taxonomy fix) and\nESC-20260708-BUS-02 (Day-0 activation nudge, needs Product/CS execution).\n**Blockers:** None on Business's own work. Both escalations need Barry's\ndecision, and ESC-20260708-BUS-02 needs real Product/CS execution Business\ncannot do itself.\n**Needs Barry today:** Review ESC-20260708-BUS-01/02 alongside the still-open\nESC-20260706-BUS-01/02/03 in `org/escalation-log.md`.\n"
         },
@@ -55,6 +59,16 @@
         {
           "filename": "b2c-trial-activation-priority-2026-07-08.md",
           "sizeBytes": 5099,
+          "isDir": false
+        },
+        {
+          "filename": "dbs-foundation-grant-application-draft-2026-07-10-cover-notes.md",
+          "sizeBytes": 6789,
+          "isDir": false
+        },
+        {
+          "filename": "dbs-foundation-grant-application-draft-2026-07-10.docx",
+          "sizeBytes": 326765,
           "isDir": false
         }
       ],
@@ -230,6 +244,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Business — 2026-07-10",
+      "department": "Business",
+      "date": "2026-07-10",
+      "id": "ESC-20260710-BUS-01",
+      "tier": "2 (approval), urgent",
+      "issue": "Completed the draft DBS Foundation Grant application (up to\nSGD 250,000) Barry shared. Two things need a decision before this goes\nfurther: (1) **the application deadline is 2026-07-13, 23:59 SGT, 3 days\nfrom today**, and actual submission is online-only and needs a real\nperson to do it; (2) DBS requires a minimum two-year track record of\ndelivering and measuring social impact, Smartick Indonesia's incorporation\ndate (22-07-2024) means the two-year mark falls on 2026-07-22, 9 days",
+      "recommendation": "Decide the eligibility question first, applying with\na live threshold risk versus holding for a later round is a judgment call\nBusiness can't make alone. If proceeding, confirm the flagged items\n(investor name, real budget figures, headcount) and have someone submit\nvia DBS's online form before 2026-07-13 23:59 SGT.",
+      "whyNotTier1": "External funding application with legal\ndeclarations and real financial disclosures, and a threshold eligibility\nquestion Business cannot resolve or waive on its own.",
+      "neededBy": "Today or tomorrow (2026-07-10/11) at the latest,\nto leave time for the confirmations above and actual online submission\nbefore the deadline.",
+      "crossDept": "Finance (budget breakdown, financial\nfigures), HR (headcount confirmation), Barry/Galih (investor name,\neligibility judgment call, actual submission).",
+      "decision": "{pending}",
+      "delegatedTo": "{pending, Barry to assign, actual online\nsubmission needs a human regardless of who else is involved}",
+      "pending": true,
+      "accent": "43B2FC"
+    },
     {
       "heading": "Escalation — Finance — 2026-07-09",
       "department": "Finance",
@@ -541,7 +571,7 @@
         "kpi": "One-step-ahead direction",
         "subMetric": "Opportunities evaluated/quarter",
         "target": "≥3",
-        "current": "5 this quarter (2026-07-06: Path Z resourcing, discount ladder review, churn-playbook execution gap; 2026-07-08: trial-activation gap, discount-taxonomy fix), see ESC-20260706-BUS-01/02/03 and ESC-20260708-BUS-01/02",
+        "current": "6 this quarter (2026-07-06: Path Z resourcing, discount ladder review, churn-playbook execution gap; 2026-07-08: trial-activation gap, discount-taxonomy fix; 2026-07-10: DBS Foundation grant eligibility/deadline risk), see ESC-20260706-BUS-01/02/03, ESC-20260708-BUS-01/02, and ESC-20260710-BUS-01",
         "status": "ON TRACK",
         "accent": "43B2FC"
       },
@@ -550,7 +580,7 @@
         "kpi": "One-step-ahead direction",
         "subMetric": "Signal-to-decision lead time",
         "target": "≤14 days",
-        "current": "0 days across both batches so far, Barry shared trackers and escalation-ready recommendations went out same day each time",
+        "current": "0 days across all batches so far, Barry shared source material and escalation-ready recommendations went out same day each time",
         "status": "ON TRACK",
         "accent": "43B2FC"
       },
@@ -559,7 +589,7 @@
         "kpi": "One-step-ahead direction",
         "subMetric": "Recommendation-to-execution hit rate",
         "target": "≥70%",
-        "current": "0/5 executed yet, all 5 pending Barry's decision",
+        "current": "0/6 executed yet, all 6 pending Barry's decision, ESC-20260710-BUS-01 is time-critical (3 days to the DBS deadline)",
         "status": "OFF TRACK",
         "accent": "43B2FC"
       },
@@ -699,6 +729,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-08 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales)"
+    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales)"
   }
 }
