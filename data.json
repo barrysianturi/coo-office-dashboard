@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T12:02:00.486Z",
+  "generatedAt": "2026-07-10T17:22:52.147Z",
   "departments": [
     {
       "key": "sales",
@@ -248,6 +248,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Marketing — 2026-07-10",
+      "department": "Marketing",
+      "date": "2026-07-10",
+      "id": "ESC-20260710-MKT-02",
+      "tier": "2 (approval)",
+      "issue": "Reviewing four real survey datasets Barry supplied (KYC,\npricing/NPS, and two Sekolah Alkhairiyah teacher-reflection surveys)\nsurfaced two findings relevant to work Business, Sales, and Product are\nactively running this week. (1) Of 88 real parents, 76% name some\nversion of \"child gets frustrated\" or \"material too hard\" as their top\nworry going in, and Sekolah Alkhairiyah's teachers repeatedly report\n(across a full year of real classroom use) that Smartick questions\nsometimes arrive above the taught grade level or ahead of classroom\nmaterial, causing frustration and disengagement. This lines up directly\nwith Business's finding that 88.3% of lost registrants completed 0-2\nsessions (`business/deliverables/b2c-trial-activation-priority-2026-07-08.md`),\nand with a question Business explicitly left open: why registrants\nnever open the app. (2) Sekolah Alkhairiyah is a real, one-year-old B2B\ndeployment with real outcome data, but does not appear anywhere in\nBusiness's 51-row B2B pipeline analysis\n(`business/work-products/b2b-b2c-pipeline-financial-analysis-2026-07.md`).\nFull detail: `marketing/work-products/voice-of-customer-2026-07.md`.",
+      "recommendation": "(1) Route the difficulty-mismatch hypothesis to\nwhoever owns the Day-0 activation nudge work (`ESC-20260708-BUS-02`,\nProduct/CS per Business's routing) as a candidate root cause worth\ntesting against, alongside their existing hypotheses. Marketing is not\npositioned to confirm or fix this, only to flag that real customer and\nteacher data points at it. (2) Ask Business/Sales to reconcile why\nAlkhairiyah isn't in the pipeline tracker, either it predates the\ntracker, is recorded elsewhere, or the tracker undercounts real B2B\naccounts, worth knowing before the B2B win-rate KPI is treated as\ncomplete.",
+      "whyNotTier1": "Both findings require another department to\ninvestigate or act (Product/CS on the activation hypothesis, Business/\nSales on the tracker gap), Marketing surfaced them from customer data\nit wasn't originally gathering for this purpose.",
+      "neededBy": "Not urgent on its own, but Business, Sales, and\nProduct are actively mid-stream on the activation problem this week\n(per `sales/deliverables/2026-07-08-sales-organization-strategy.md`),\nso this is more useful now than after they've already tested other\nhypotheses.",
+      "crossDept": "Business (B2B pipeline reconciliation),\nSales (same), Product (activation root-cause testing), Academic\n(Alkhairiyah's data includes a pre-built qualitative thematic-coding\npass on math self-efficacy that may be useful reference for their own\nimpact-research KPI).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "99417A"
+    },
     {
       "heading": "Escalation — Marketing — 2026-07-10",
       "department": "Marketing",
@@ -663,7 +679,7 @@
         "kpi": "Channel optimization",
         "subMetric": "Campaign ROI",
         "target": "",
-        "current": "Not computable yet, no registration/subscription record anywhere carries a channel field. Directional proxy: NAY campaign spends 63% of budget on one offline booth (~Rp170K/visitor reached) vs. 11% on paid digital, with owned/organic (45.2K IG followers, 6.09% engagement) carrying most reach at near-zero cash cost. See `marketing/work-products/channel-strategy-2026-07.md`",
+        "current": "Still not computable as true CAC (no registration record carries a channel field), but a real 100-parent survey shows 55% of discovery comes from one personal Instagram relationship (@galihtyanr), not the brand's own account (30%) or paid ads, a concentration risk as much as an efficiency signal. See `marketing/work-products/channel-strategy-2026-07.md` and `voice-of-customer-2026-07.md`",
         "status": "OFF TRACK",
         "accent": "99417A"
       },
