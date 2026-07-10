@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T11:57:44.441Z",
+  "generatedAt": "2026-07-10T12:02:00.486Z",
   "departments": [
     {
       "key": "sales",
@@ -248,6 +248,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Marketing — 2026-07-10",
+      "department": "Marketing",
+      "date": "2026-07-10",
+      "id": "ESC-20260710-MKT-01",
+      "tier": "2 (approval)",
+      "issue": "Barry asked Marketing which channel is most cost-efficient for\ngrowth. Answer: not computable, no registration or subscription record\nanywhere in the repo (checked Business's full-funnel analysis and\ntracker work, Sales's pipeline docs) carries a channel/source field, so\nreal CAC-by-channel cannot be calculated. The only proxy available is\nthe NAY campaign's own budget structure: 63% of its Rp27,331,000 budget\ngoes to one offline booth reaching an estimated 100+ visitors\n(~Rp170,000/visitor), versus 11% on paid digital, while owned/organic\nchannels (45.2K IG followers) carry most reach at near-zero cash cost.\nFull analysis: `marketing/work-products/channel-strategy-2026-07.md`.",
+      "recommendation": "Add a channel/source field at registration (e.g.\nUTM-derived or a manual \"how did you hear about us\" field) so a future\npass can compute real channel CAC and conversion. This is a Product\nbuild (registration flow) and overlaps directly with Finance's\nalready-in-progress CAC-tag mechanism work\n(`finance/daily-checkins/2026-07-06.md`), recommend scoping it as one\njoint piece of work across Product and Finance rather than two separate\nasks landing on each separately. Lower-cost interim step: once the NAY\ncampaign closes (2026-07-12), do a manual channel post-mortem from\nwhatever ad-platform dashboards, Shopee sales, and booth registration\ncounts show directly, this is the first real spend-to-signup dataset\nMarketing will have.",
+      "whyNotTier1": "Building the field is a Product engineering\ntask Marketing cannot do itself, and it needs to be coordinated with\nFinance's parallel CAC-tagging work rather than built twice.",
+      "neededBy": "Not urgent this week, but before any future\npaid-acquisition spend increase is proposed, without it the same \"which\nchannel\" question will be unanswerable again next time it's asked.",
+      "crossDept": "Product (owns the registration flow build),\nFinance (CAC-tag mechanism should be scoped jointly, not duplicated).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "99417A"
+    },
     {
       "heading": "Escalation — Business — 2026-07-10",
       "department": "Business",
@@ -647,8 +663,8 @@
         "kpi": "Channel optimization",
         "subMetric": "Campaign ROI",
         "target": "",
-        "current": "",
-        "status": "",
+        "current": "Not computable yet, no registration/subscription record anywhere carries a channel field. Directional proxy: NAY campaign spends 63% of budget on one offline booth (~Rp170K/visitor reached) vs. 11% on paid digital, with owned/organic (45.2K IG followers, 6.09% engagement) carrying most reach at near-zero cash cost. See `marketing/work-products/channel-strategy-2026-07.md`",
+        "status": "OFF TRACK",
         "accent": "99417A"
       },
       {
@@ -656,8 +672,8 @@
         "kpi": "Clear brand & positioning",
         "subMetric": "Brand consistency score",
         "target": "",
-        "current": "",
-        "status": "",
+        "current": "Not yet scored, but positioning refresh is in progress: competitor analysis, B2C/B2B ICP, and a 5-workstream workplan exist (`marketing/work-products/`), 2 of 5 workstreams blocked on Academic/Product/Sales/Business input per `ESC-20260706-MKT-01`",
+        "status": "AT RISK",
         "accent": "99417A"
       },
       {
@@ -733,6 +749,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales)"
+    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales); 2026-07-10 (Marketing rows only, by Marketing)"
   }
 }
