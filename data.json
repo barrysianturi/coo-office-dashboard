@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T17:22:52.147Z",
+  "generatedAt": "2026-07-12T03:00:40.248Z",
   "departments": [
     {
       "key": "sales",
@@ -259,9 +259,9 @@
       "whyNotTier1": "Both findings require another department to\ninvestigate or act (Product/CS on the activation hypothesis, Business/\nSales on the tracker gap), Marketing surfaced them from customer data\nit wasn't originally gathering for this purpose.",
       "neededBy": "Not urgent on its own, but Business, Sales, and\nProduct are actively mid-stream on the activation problem this week\n(per `sales/deliverables/2026-07-08-sales-organization-strategy.md`),\nso this is more useful now than after they've already tested other\nhypotheses.",
       "crossDept": "Business (B2B pipeline reconciliation),\nSales (same), Product (activation root-cause testing), Academic\n(Alkhairiyah's data includes a pre-built qualitative thematic-coding\npass on math self-efficacy that may be useful reference for their own\nimpact-research KPI).",
-      "decision": "{pending}",
+      "decision": "Alkhairiyah has been retained to continue using Smartick in the new academic year. For the difficulty-mismatch hypothesis, this will be escalated and discussed with the head of product, thanks! _(via dashboard, 2026-07-12)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "99417A"
     },
     {
