@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T03:03:38.196Z",
+  "generatedAt": "2026-07-12T03:05:01.759Z",
   "departments": [
     {
       "key": "sales",
@@ -307,9 +307,9 @@
       "whyNotTier1": "Requires access to a data source Finance doesn't\ncurrently have and doesn't know the owner of, not something resolvable\nfrom data already in `data-inbox/finance/`.",
       "neededBy": "Before the prepaid/recognized revenue split can\nbe completed, no hard deadline otherwise.",
       "crossDept": "Likely Product (billing/subscription system\nownership unconfirmed from Finance's view, Barry to confirm who owns it).",
-      "decision": "{pending}",
+      "decision": "Okay, let me check how can we improve the data to be able to break the provide plan length and start date to each transaction. _(via dashboard, 2026-07-12)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "1B8A5E"
     },
     {
