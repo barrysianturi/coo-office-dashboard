@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T03:00:40.248Z",
+  "generatedAt": "2026-07-12T03:03:38.196Z",
   "departments": [
     {
       "key": "sales",
@@ -275,9 +275,9 @@
       "whyNotTier1": "Building the field is a Product engineering\ntask Marketing cannot do itself, and it needs to be coordinated with\nFinance's parallel CAC-tagging work rather than built twice.",
       "neededBy": "Not urgent this week, but before any future\npaid-acquisition spend increase is proposed, without it the same \"which\nchannel\" question will be unanswerable again next time it's asked.",
       "crossDept": "Product (owns the registration flow build),\nFinance (CAC-tag mechanism should be scoped jointly, not duplicated).",
-      "decision": "{pending}",
+      "decision": "This is a hard problem now. We cannot add an event tracker that can reliably track the source of sales. What can we alternatively do to tackle this problem? Should we just ask all the subscribers one by one of when do they first know Smartick? and what makes them subscribing? _(via dashboard, 2026-07-12)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "99417A"
     },
     {
