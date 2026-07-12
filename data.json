@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T03:12:08.321Z",
+  "generatedAt": "2026-07-12T03:37:19.695Z",
   "departments": [
     {
       "key": "sales",
@@ -8,7 +8,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-08.md",
-          "content": "# Sales — Daily Check-in — 2026-07-08\n\n**Progress:** First real-world input landed (Izzah's CS ops deck).\nSynthesized it with Business's B2C funnel/churn and B2B pipeline analyses\ninto `sales/deliverables/2026-07-08-sales-organization-strategy.md`:\nCS/Outbound jobdesk split, B2C execution sequencing (activation sampling\n> churn backlog > discount ladder), B2B Path Z playbook/KPI/timeline per\nBarry's 07-06 ask, and updated `org/kpi-dashboard.md` Sales rows with\nreal sourced numbers for the first time.\n**Blockers:** None blocking today's output, but real execution capacity\nis the open question, see escalations below.\n**Needs Barry today:** Two new escalations logged, `ESC-20260708-SALES-01`\n(real staffing decision, current CS/Outbound headcount cannot absorb the\nchurn backlog, activation sampling, and Path Z growth at once) and\n`ESC-20260708-SALES-02` (Outbound phone number, blast-cadence time,\nfreelance-hiring policy).\n"
+          "content": "# Sales — Daily Check-in — 2026-07-08\n\n**Progress:** First real-world input landed (Izzah's CS ops deck).\nSynthesized it with Business's B2C funnel/churn and B2B pipeline analyses\ninto `sales/deliverables/2026-07-08-sales-organization-strategy.md`:\nCS/Outbound jobdesk split, B2C execution sequencing (activation sampling\n> churn backlog > discount ladder), B2B Path Z playbook/KPI/timeline per\nBarry's 07-06 ask, and updated `org/kpi-dashboard.md` Sales rows with\nreal sourced numbers for the first time.\n**Blockers:** None blocking today's output, but real execution capacity\nis the open question, see escalations below.\n**Needs Barry today:** Two new escalations logged, `ESC-20260708-SALES-01`\n(real staffing decision, current CS/Outbound headcount cannot absorb the\nchurn backlog, activation sampling, and Path Z growth at once) and\n`ESC-20260708-SALES-02` (Outbound phone number, blast-cadence time,\nfreelance-hiring policy).\n\n**Update (later 2026-07-08):** Barry approved both hires (B2C Conversion\nAgent, B2B BD Associate) plus the Vamel-to-full-retention reallocation,\nconfirming BD is breaking down. Shipped the org redesign and hiring plan\n(`sales/deliverables/2026-07-08-sales-org-redesign-and-hiring-plan.md`),\ntwo draft role specs, and the two most urgent SOPs (inbound triage/routing,\nB2B trial-to-onboarding) as work-products. Decision recorded in\n`org/decision-log.md`. Next: HR & GA to formalize the JDs (span-of-control\nsign-off), and a working session with Nuha and Academic to finalize the\nB2B SOP.\n"
         },
         {
           "filename": "2026-07-06.md",
@@ -17,6 +17,11 @@
       ],
       "weeklyStatus": [],
       "deliverables": [
+        {
+          "filename": "2026-07-08-sales-org-redesign-and-hiring-plan.md",
+          "sizeBytes": 7678,
+          "isDir": false
+        },
         {
           "filename": "2026-07-08-sales-organization-strategy.md",
           "sizeBytes": 11170,
