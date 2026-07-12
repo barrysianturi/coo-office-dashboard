@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T03:05:01.759Z",
+  "generatedAt": "2026-07-12T03:12:08.321Z",
   "departments": [
     {
       "key": "sales",
@@ -355,9 +355,9 @@
       "whyNotTier1": "Needs real Product/engineering time to build and\nship a Day-0 flow, and real people to make sample contact calls/messages.\nBusiness can size the problem and propose the test design, not execute\neither.",
       "neededBy": "Before any further top-of-funnel acquisition\nspend increase, since that spend is currently filling a funnel that loses\n88% of what enters it before product quality or price ever come into play.",
       "crossDept": "Product (Day-0 activation flow, product\nanalytics to diagnose the drop-off), Sales/CS (sample outreach\nexecution).",
-      "decision": "{pending}",
+      "decision": "Yes, please. Do it, build a plan of day-0 activation nudge, improve the playbook, and devise contact sampling mechanism and its evaluation metrics whether we should build a larger campaign or not. _(via dashboard, 2026-07-12)_",
       "delegatedTo": "{pending, Barry to assign}",
-      "pending": true,
+      "pending": false,
       "accent": "43B2FC"
     },
     {
