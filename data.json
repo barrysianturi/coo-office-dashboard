@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T12:19:38.548Z",
+  "generatedAt": "2026-07-13T12:23:04.040Z",
   "departments": [
     {
       "key": "sales",
@@ -160,6 +160,10 @@
       "name": "HR & General Affairs",
       "accent": "9C77CF",
       "dailyCheckins": [
+        {
+          "filename": "2026-07-13.md",
+          "content": "# HR & GA — Daily Check-in — 2026-07-13\n\n**Progress:** Responded to Sales's L&D consult on the new training\ncurriculum (PR #51): confirmed the training cadence fits the OD rollout as\na parallel track, not merged into the shared org-wide Lunch & Learn slot;\nbuilt a reusable L&D certification tracker (27 rows seeded from the\ncurriculum's Faiz/Izzah/Vamel modules); reviewed the Faiz/Izzah trainer/QA\nstructural change for span-of-control duplication (none found) and\nrecommended Sales get it formally signed off. Also closed the last open\nidentity gap in the human org chart, Freelance CS under Faiz is Runi,\nconfirmed via `ESC-20260708-SALES-01`.\n**Blockers:** None.\n**Needs Barry today:** Nothing new from HR & GA. Recommended (not filed)\nthat Sales raise a Tier 2 escalation for formal sign-off on Faiz/Izzah's\nexpanded scope, that's Sales's call.\n"
+        },
         {
           "filename": "2026-07-10.md",
           "content": "# HR & GA — Daily Check-in — 2026-07-10\n\n**Progress:** Reviewed a real, current PKWT contract Barry shared\n(HRGA-151/PKWT/V/2026) against the escalated Pasal cross-reference issue.\nExtracted the structural changes (updated Pasal 3/4/5, a new Lampiran I\nexplanation section) into `kontrak-pkwt-template.docx`, no personal data\nretained anywhere. Confirmed and closed one of the two broken references\n(Pasal 5's stale \"Pasal 10\" mention), confirmed the other (\"Pasal 13\" in\nPasal 6) is a live, active defect, not old cruft, still open.\n**Blockers:** None.\n**Needs Barry today:** Nothing new, `ESC-20260708-HRGA-01` (the Pasal 13\nreference) is still the one open item, needs real legal review, not\nanother template diff.\n"
@@ -667,6 +671,15 @@
       },
       {
         "dept": "HR & GA",
+        "kpi": "Scalable organization",
+        "subMetric": "L&D certification tracking",
+        "target": "Tracker live, learners certified as trained",
+        "current": "Tracker built 2026-07-13 (`hr-ga/work-products/ld-certification-tracker.xlsx`), seeded with Sales's 3-learner curriculum, 27 modules, 0 passed yet, training not started",
+        "status": "ON TRACK",
+        "accent": "9C77CF"
+      },
+      {
+        "dept": "HR & GA",
         "kpi": "Legal compliance",
         "subMetric": "Contracts reviewed pre-execution",
         "target": "100%",
@@ -783,6 +796,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-08 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales); 2026-07-10 (Marketing rows only, by Marketing)"
+    "lastUpdated": "2026-07-13 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales); 2026-07-10 (Marketing rows only, by Marketing)"
   }
 }
