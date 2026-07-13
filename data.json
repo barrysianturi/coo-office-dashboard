@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T12:40:40.254Z",
+  "generatedAt": "2026-07-13T12:57:52.173Z",
   "departments": [
     {
       "key": "sales",
@@ -285,9 +285,9 @@
       "whyNotTier1": "A refund policy is a company commitment across\nthree departments (Product owns the documented policy, Finance owns the\nfinancial treatment, CS executes it with customers), not an operating\ndetail Sales can set alone.",
       "neededBy": "Before C3 is certified and before the next refund\nrequest is answered, since inconsistent answers are a live customer-trust\nrisk (compare the duplicate-charge billing-trust complaints in\n`business/deliverables/b2c-game-plan-2026-07.md`).",
       "crossDept": "Product (documented policy in the KB), Finance\n(refund treatment and the open posting-rule cleanup), CS/Sales (executes\nrefunds with customers and trains on them).",
-      "decision": "{pending}",
+      "decision": "Sometimes decisions need to be made for aggravated customers who want to refund for their 1-month or 3-month subscription. In these cases, we make decisions to still give the refund. _(via dashboard, 2026-07-13)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "FBA62D"
     },
     {
