@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T12:23:04.040Z",
+  "generatedAt": "2026-07-13T12:26:06.859Z",
   "departments": [
     {
       "key": "sales",
@@ -226,6 +226,10 @@
       "accent": "7AC43D",
       "dailyCheckins": [
         {
+          "filename": "2026-07-13.md",
+          "content": "# Academic — Daily Check-in — 2026-07-13\n\n**Progress:** Reviewed Sales's training curriculum (C4) proof-point ask\nand Marketing's Workstream 4 ask, both point to the same three\nunverified figures (NPS, effectiveness score, Alkhairiyah reflection),\nnone Academic-generated. Raised `ESC-20260713-ACAD-01` for one shared,\nBarry-approved answer instead of two drifting ones. Also formalized the\nB2B trial-session delivery role (already assumed by Sales's SOP but never\nlogged on Academic's side) and wrote the stage 5 to 6 handoff protocol.\n**Blockers:** Proof-points question needs Barry's decision on\nESC-20260713-ACAD-01 before Sales/Marketing can cite figures externally\nwith confidence.\n**Needs Barry today:** Decision on ESC-20260713-ACAD-01.\n"
+        },
+        {
           "filename": "2026-07-06.md",
           "content": "# Academic — Daily Check-in — 2026-07-06\n\n**Progress:** Read `org/student-data-policy.md` against Barry's ruling on\nESC-20260705-COO-01 (student_id only, no personal data). Confirms as\npolicy-consistent: rule 1 defines direct identifiers as name/contact/\nschool/age/photo, a bare student_id isn't on that list, and rule 2 requires\ndrops pre-stripped before `data-inbox/academic/` anyway. Sufficiency is\nconditional on two things holding at the actual export: (a) the\nstudent_id-to-identity mapping stays outside the repo, and (b) no other\ndirect identifier rides alongside student_id in the real file. Not yet\nverifiable, `data-inbox/academic/` is still empty, no export has landed.\n**Blockers:** None. Waiting on Barry to drop real usage/assessment data.\n**Needs Barry today:** None. Will re-check conditions (a)/(b) above against\nthe actual export the moment it lands, and re-raise ESC-20260705-COO-01 if\neither fails.\n"
         }
@@ -270,6 +274,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Academic — 2026-07-13",
+      "department": "Academic",
+      "date": "2026-07-13",
+      "id": "ESC-20260713-ACAD-01",
+      "tier": "2 (approval)",
+      "issue": "Sales (training curriculum Module C4, `sales/deliverables/2026-07-13-sales-training-curriculum.md`, PR #51, already merged and usable) and Marketing (`marketing/work-products/brand-positioning-workplan.md`\nWorkstream 4) are both asking Academic to confirm or supply learning-outcome\nand confidence proof points for prospect/parent-facing claims. All three\nfigures in play, NPS ~+61, perceived effectiveness 8.18/10, and the\nSekolah Alkhairiyah one-year reflection, come from Marketing's\n`marketing/work-products/voice-of-customer-2026-07.md`, sourced from real\nsurvey data Barry supplied 2026-07-10. None of it is Academic-generated:\nAcademic has not run a causal outcome study and `data-inbox/academic/` is\nstill empty. Two specific risks: (1) NPS and perceived-effectiveness are\nself-reported satisfaction/perception metrics from a self-selected,\nnon-representative sample (Marketing's own caveat in that file), not\nindependently verified learning-outcome data, citing them as proof of\nlearning outcomes overstates what they show; (2) the same Alkhairiyah\ndataset that supports the confidence-gain narrative also documents real,\nrecurring difficulty-calibration complaints (questions arriving above\ngrade level or before material was taught, causing frustration), which is\nliterally the worry Module C4 exists to defuse. A pitch that cites only\nthe positive quotes risks a rep getting caught flat-footed if a prospect's\nactual experience matches the documented negative.",
+      "recommendation": "Approve one shared, Barry-signed-off external\nproof-points reference that both Sales and Marketing draw from (instead of\nAcademic answering each department ad hoc and risking drift), with three\nground rules: (a) NPS and perceived-effectiveness always cited as\nparent-reported satisfaction/perception from a self-selected survey\nsample, never worded as a measured learning-outcome effect; (b) the\nAlkhairiyah case is a legitimate, citable proof point for adaptive\ndifficulty and confidence-building, but Sales's C4 role-play should\nexplicitly rehearse the honest edge case (occasional above-level\nquestions, connectivity, short-session timing) rather than only the\npositive quotes; (c) until Academic runs its own causal outcome study, no\nexternal claim should say Academic \"proved\" or \"measured\" a learning\neffect, only that pedagogy design and early customer/school signal are\ndirectionally consistent.",
+      "whyNotTier1": "per `academic/SYSTEM-PROMPT.md`, any finding\npublished outside the org (parents, schools, marketing claims) and any\ncross-department use of impact data is Tier 2. This is both at once, two\ndepartments are about to put externally-facing claims in front of real\nprospects and school buyers using data neither Academic nor Marketing has\nindependently verified for outcome claims.",
+      "neededBy": "Not blocking today (Sales's curriculum is already\nmerged and usable per Faiz), but should not sit long, C4 is already\ntrainable and Marketing's Workstream 4 is only \"partially unblocked\"\npending this.",
+      "crossDept": "Sales (training curriculum C4/C5), Marketing\n(brand-positioning Workstream 4). Both are currently waiting on this exact\nconfirmation from Academic.",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "7AC43D"
+    },
     {
       "heading": "Escalation — Marketing — 2026-07-10",
       "department": "Marketing",
