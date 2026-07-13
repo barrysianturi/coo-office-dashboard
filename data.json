@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T12:57:52.173Z",
+  "generatedAt": "2026-07-13T13:54:46.091Z",
   "departments": [
     {
       "key": "sales",
@@ -227,7 +227,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-13.md",
-          "content": "# Academic — Daily Check-in — 2026-07-13\n\n**Progress:** Reviewed Sales's training curriculum (C4) proof-point ask\nand Marketing's Workstream 4 ask, both point to the same three\nunverified figures (NPS, effectiveness score, Alkhairiyah reflection),\nnone Academic-generated. Raised `ESC-20260713-ACAD-01` for one shared,\nBarry-approved answer instead of two drifting ones. Also formalized the\nB2B trial-session delivery role (already assumed by Sales's SOP but never\nlogged on Academic's side) and wrote the stage 5 to 6 handoff protocol.\n**Blockers:** Proof-points question needs Barry's decision on\nESC-20260713-ACAD-01 before Sales/Marketing can cite figures externally\nwith confidence.\n**Needs Barry today:** Decision on ESC-20260713-ACAD-01.\n"
+          "content": "# Academic — Daily Check-in — 2026-07-13\n\n**Progress:** Answered Sales/Marketing's proof-point consult\n(`ESC-20260713-ACAD-01`) and wrote the B2B trial-handoff protocol. Ran\nAcademic's first real usage-vs-outcome analysis (Sekolah Alkhairiyah,\n781 students): usage predicts Smartick's own internal progression\nmetrics, but not the one external-ish outcome measure available, see\n`academic/work-products/2026-07-13-alkhairiyah-usage-impact-analysis.md`.\n**Blockers:** None blocking today's work, both items above are complete\nand logged.\n**Needs Barry today:** Decisions on `ESC-20260713-ACAD-01` (shared\nproof-points reference) and `ESC-20260713-ACAD-02` (two of five real\ndata files arrived with name/NISN/birthdate attached, handled safely\nthis time, re-raising the student-data policy per its own re-raise\ncondition).\n"
         },
         {
           "filename": "2026-07-06.md",
@@ -236,7 +236,7 @@
       ],
       "weeklyStatus": [],
       "deliverables": [],
-      "lessonsLearned": "# Academic — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n",
+      "lessonsLearned": "# Academic — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Academic — 2026-07-13\n\n**Trigger:** First real data drop (Sekolah Alkhairiyah usage/assessment\nfiles) arrived directly from Barry in local Downloads, not\n`data-inbox/academic/`, with full name/NISN/birthdate attached to two of\nthe five files, and the source's own \"coded\" student IDs turned out to\nbe name-derived, not real pseudonyms.\n**Source:** Self-observed / Escalation outcome (`ESC-20260713-ACAD-02`).\n**Lesson:** Never trust a source file's own \"coded ID\" as a real\npseudonym without checking how it was constructed, a code built from\nname fragments (e.g. `AK-MUHAMMADDZ19`) is decodable by anyone with a\nroster. Always regenerate a salted-hash pseudonym before anything\nderived touches disk, and check every column, not just the obvious ones,\nagainst `org/student-data-policy.md` rule 1's identifier list\n(`Birthdate` is explicitly listed and is easy to miss since it doesn't\nread as \"personal data\" the way a name does).\n**Applies to:** every future `data-inbox/academic/` drop, and the\npseudonymization step in `academic/work-products/2026-07-13-alkhairiyah-usage-impact-analysis.md`\nshould be the template for how it's done.\n**Status:** Logged.\n\n# Lesson — Academic — 2026-07-13\n\n**Trigger:** Sekolah Alkhairiyah usage-impact analysis found Smartick's\nown internal progression metrics (Delta Level, Total Unit Dikuasai)\ncorrelate strongly with usage (r=+0.42 to +0.56), while the one\nexternal-ish outcome measure available showed no relationship (r=−0.05,\nnot significant).\n**Source:** Self-observed.\n**Lesson:** An internal platform-computed progression metric is not\nindependent evidence of learning impact when it is calculated from the\nsame session log as the usage measure being tested, the correlation is\nclose to mechanical. Any future causal or associational study must keep\ninternal-engine outcomes and external/independent outcomes in separate,\nclearly labeled result sections, never blend them into one headline\nnumber, or a mechanical relationship will get reported as if it were a\nreal effect.\n**Applies to:** `academic/playbook.md`'s \"Quarterly causal impact study\"\ndefault approach, folded in below.\n**Status:** Folded into playbook (2026-07-13).\n",
       "findings": null
     },
     {
@@ -274,6 +274,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Academic — 2026-07-13",
+      "department": "Academic",
+      "date": "2026-07-13",
+      "id": "ESC-20260713-ACAD-02",
+      "tier": "2 (approval)",
+      "issue": "Re-raising `ESC-20260705-COO-01` per the condition attached to\nBarry's original decision (\"if this is not enough, remember this\nrecommendation and bring it up again when the data is already present\").\nReal data has landed: Barry supplied 5 files 2026-07-13 (local Downloads,\nSekolah Alkhairiyah usage/assessment data). Two of them fail the\n\"student_id only, no personal data\" bar: `Copy of Hasil_TKA_AlKhairiyah -\nHasil TKA.csv` carries full name (`Nama`), national student ID (`NISN`),\nand birthdate (`Tanggal Lahir`) directly alongside test scores (149 real\nrows); the three `Progres Murid Alkhairiyah - *.xlsx` files carry a\n`Birthdate` column (explicitly a direct identifier per\n`org/student-data-policy.md` rule 1) alongside usage/progression data\n(781 real rows). Separately, the coded IDs already present in the source\nfiles (`AK-<name-fragment><digits>`, e.g. `AK-MUHAMMADDZ19`) are not real\npseudonyms, they are derived from the student's own name and are likely\ndecodable by anyone with the school's class roster.",
+      "recommendation": "Handled this instance without waiting on Barry (data\nwas live and directly requested for analysis): raw files were not copied\ninto the repo, stay only in local Downloads; a proper non-decodable\npseudonym (`ALKH-<salted hash>`, crosswalk kept outside the repo, per\nrule 1) replaced the source's name-derived codes; `Birthdate` was dropped\nentirely before anything was written to disk; the TKA file's row-level\ndata was used only in-memory to compute a 3-row school-unit aggregate,\nnever persisted at student level. Detail in\n`academic/work-products/2026-07-13-alkhairiyah-data/README.md` (moved\nthere from a first attempt at `data-inbox/academic/`, that path turned\nout to be an org-level-only write path per `scripts/check-pr-scope.mjs`,\nnot something a department PR can populate). Going forward, recommend\nwhoever exports future drops (school, platform team) be told to strip\nname/NISN/birthdate before the file reaches a Head's session at all,\nthis is the second real-data drop and the second time Academic has had\nto build the stripping step itself rather than receive it pre-stripped.",
+      "whyNotTier1": "Per `academic/SYSTEM-PROMPT.md`, data-privacy\nquestions for children's data route to policy, not a Head's unilateral\ncall, and this is the exact re-raise condition Barry attached to his\noriginal ruling.",
+      "neededBy": "Not blocking (already handled safely this time),\nbut before the next real data drop, so the stripping step happens before\nit reaches a Head rather than after.",
+      "crossDept": "HR & GA (Legal & Compliance owns policy\ninterpretation), any department that later receives a real data-inbox\ndrop.",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "7AC43D"
+    },
     {
       "heading": "Escalation — Sales — 2026-07-13",
       "department": "Sales",
@@ -764,8 +780,8 @@
         "kpi": "Learning goals achieved",
         "subMetric": "Goal-achievement rate",
         "target": "",
-        "current": "",
-        "status": "",
+        "current": "Not measurable yet, no formal per-student learning-goal-setting process exists",
+        "status": "OFF TRACK",
         "accent": "7AC43D"
       },
       {
@@ -773,17 +789,17 @@
         "kpi": "Learning goals achieved",
         "subMetric": "Students with defined goals",
         "target": "100%",
-        "current": "",
-        "status": "",
+        "current": "0%, same gap as above",
+        "status": "OFF TRACK",
         "accent": "7AC43D"
       },
       {
         "dept": "Academic",
         "kpi": "Impact & intervention",
         "subMetric": "Causal studies per quarter",
-        "target": "≥1",
-        "current": "",
-        "status": "",
+        "target": "≥1, with a defensible identification strategy",
+        "current": "First real study done this quarter (`academic/work-products/2026-07-13-alkhairiyah-usage-impact-analysis.md`, 781 real students, one B2B school): usage strongly predicts Smartick's own internal progression metrics (partly mechanical), but shows no reliable relationship with the one external-ish outcome measure available. Correlational only, no identification strategy yet, does not meet this KPI's own bar as written. See that work-product's Room for Improvement section for what closing the gap requires",
+        "status": "AT RISK",
         "accent": "7AC43D"
       },
       {
@@ -791,8 +807,8 @@
         "kpi": "Impact & intervention",
         "subMetric": "Flagged students fed back within 7 days",
         "target": "100%",
-        "current": "",
-        "status": "",
+        "current": "Not built yet, no struggling-cohort detection pipeline exists",
+        "status": "OFF TRACK",
         "accent": "7AC43D"
       },
       {
@@ -832,6 +848,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-13 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales); 2026-07-10 (Marketing rows only, by Marketing)"
+    "lastUpdated": "2026-07-13 (Academic rows only, by Academic); 2026-07-13 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales); 2026-07-10 (Marketing rows only, by Marketing)"
   }
 }
