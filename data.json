@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T12:26:06.859Z",
+  "generatedAt": "2026-07-13T12:40:40.254Z",
   "departments": [
     {
       "key": "sales",
@@ -8,7 +8,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-13.md",
-          "content": "# Sales — Daily Check-in — 2026-07-13\n\n**Progress:** Developed a sales training curriculum for Faiz, Izzah, and\nVamel (`sales/deliverables/2026-07-13-sales-training-curriculum.md`).\nCompetency-based, built from Izzah's own field-enumerated gaps plus real\ncustomer-survey data, with a Shared Core (product, journey, commercial\nmechanics, value narrative, positioning, communication/tools) and\nrole-specific tracks. Its structural move: turns Faiz and Izzah into the\ninternal trainer and QA function the team has never had. Grounded in\nProduct, Marketing, Business, and HR & GA published work.\n**Blockers:** None. Five cross-department consult asks dispatched (Product,\nAcademic, Marketing, HR & GA, Business) for sign-off on content they own;\ncurriculum is usable now and gets more authoritative as those land.\n**Needs Barry today:** Confirm the C3 discount-type definitions and current\npricing (ties to `ESC-20260706-BUS-02`) so the commercial-mechanics module\nis not taught on unconfirmed numbers.\n"
+          "content": "# Sales — Daily Check-in — 2026-07-13\n\n**Progress:** Developed a sales training curriculum for Faiz, Izzah, and\nVamel (`sales/deliverables/2026-07-13-sales-training-curriculum.md`).\nCompetency-based, built from Izzah's own field-enumerated gaps plus real\ncustomer-survey data, with a Shared Core (product, journey, commercial\nmechanics, value narrative, positioning, communication/tools) and\nrole-specific tracks. Its structural move: turns Faiz and Izzah into the\ninternal trainer and QA function the team has never had. Grounded in\nProduct, Marketing, Business, and HR & GA published work.\n**Blockers:** None. Five cross-department consult asks dispatched (Product,\nAcademic, Marketing, HR & GA, Business) for sign-off on content they own;\ncurriculum is usable now and gets more authoritative as those land.\n**Needs Barry today:** Confirm the C3 discount-type definitions and current\npricing (ties to `ESC-20260706-BUS-02`) so the commercial-mechanics module\nis not taught on unconfirmed numbers.\n\n**Update (later 2026-07-13):** Product consult came back (PR #53). C1 and C2\nconfirmed fine, C3 corrected: fixed the admin-fee wording (Rp4,500 applies\nto every checkout link, not WhatsApp-only), pulled the refund specifics,\nand switched pricing to teach the lookup mechanism rather than fixed\nfigures. Product surfaced an unresolved refund-rule gap (annual-only policy\nvs prorated refunds happening in practice, flagged by Finance 2026-07-06,\nstill open after 5 days); logged it as `ESC-20260713-SALES-01` since CS\nanswers refund requests live without an agreed rule. Academic, Marketing,\nand HR & GA consults still open.\n"
         },
         {
           "filename": "2026-07-08.md",
@@ -33,7 +33,7 @@
         },
         {
           "filename": "2026-07-13-sales-training-curriculum.md",
-          "sizeBytes": 16406,
+          "sizeBytes": 17693,
           "isDir": false
         }
       ],
@@ -274,6 +274,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Sales — 2026-07-13",
+      "department": "Sales",
+      "date": "2026-07-13",
+      "id": "ESC-20260713-SALES-01",
+      "tier": "2 (approval)",
+      "issue": "There is no single agreed customer-facing refund rule, and CS\nanswers refund requests live without one. The User Manual says refunds are\n\"annual plans only,\" but Finance's transaction review found real refund\namounts of Rp44,400 to Rp888,000, too small to be full annual-plan\nrefunds, so partial or prorated refunds are already happening in practice\n(`finance/staff-logs/accounting-officer-log.md`, 2026-07-06; Product\nKnowledge Base Section 3, \"policy vs confirmed practice\"). Product, Finance,\nand CS have each separately noted that the three need to agree one rule,\nbut the gap has sat unresolved for 5 days with no escalation forcing the\ndecision. It now blocks certifying the Commercial Mechanics module (C3) of\nthe sales training curriculum\n(`sales/deliverables/2026-07-13-sales-training-curriculum.md`), and more\nimportantly means CS may be telling different customers different things\nabout refunds today.",
+      "recommendation": "Convene a single decision on the customer-facing refund\nrule (who is eligible, full vs prorated, over what window, routed how) so\nCS can state it consistently and the curriculum can teach it. Until then,\nCS trains and answers with only \"refund requests route through Pedagogical\nSupport,\" asserting no eligibility or amount specifics. Finance's separate\nrefund-posting-accounting fix (2101 vs 4101) can proceed in parallel; this\nescalation is about the customer-facing policy, not the ledger treatment.",
+      "whyNotTier1": "A refund policy is a company commitment across\nthree departments (Product owns the documented policy, Finance owns the\nfinancial treatment, CS executes it with customers), not an operating\ndetail Sales can set alone.",
+      "neededBy": "Before C3 is certified and before the next refund\nrequest is answered, since inconsistent answers are a live customer-trust\nrisk (compare the duplicate-charge billing-trust complaints in\n`business/deliverables/b2c-game-plan-2026-07.md`).",
+      "crossDept": "Product (documented policy in the KB), Finance\n(refund treatment and the open posting-rule cleanup), CS/Sales (executes\nrefunds with customers and trains on them).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "FBA62D"
+    },
     {
       "heading": "Escalation — Academic — 2026-07-13",
       "department": "Academic",
