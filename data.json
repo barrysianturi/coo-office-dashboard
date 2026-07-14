@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T08:21:41.962Z",
+  "generatedAt": "2026-07-14T23:17:55.945Z",
   "departments": [
     {
       "key": "sales",
@@ -238,7 +238,7 @@
       "deliverables": [
         {
           "filename": "2026-07-14-pretest-posttest-and-causal-design-proposal.md",
-          "sizeBytes": 12288,
+          "sizeBytes": 12548,
           "isDir": false
         }
       ],
