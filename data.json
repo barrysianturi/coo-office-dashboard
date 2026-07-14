@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T03:17:38.961Z",
+  "generatedAt": "2026-07-14T03:34:46.099Z",
   "departments": [
     {
       "key": "sales",
@@ -235,7 +235,13 @@
         }
       ],
       "weeklyStatus": [],
-      "deliverables": [],
+      "deliverables": [
+        {
+          "filename": "2026-07-14-pretest-posttest-and-causal-design-proposal.md",
+          "sizeBytes": 12288,
+          "isDir": false
+        }
+      ],
       "lessonsLearned": "# Academic — Lessons Learned\n\nAppend-only log. Use `templates/lessons-learned.template.md` for each\nentry. Newest entries first. Consolidate durable lessons into\n`playbook.md` monthly.\n\n---\n\n<!-- Add entries below -->\n\n# Lesson — Academic — 2026-07-13\n\n**Trigger:** First real data drop (Sekolah Alkhairiyah usage/assessment\nfiles) arrived directly from Barry in local Downloads, not\n`data-inbox/academic/`, with full name/NISN/birthdate attached to two of\nthe five files, and the source's own \"coded\" student IDs turned out to\nbe name-derived, not real pseudonyms.\n**Source:** Self-observed / Escalation outcome (`ESC-20260713-ACAD-02`).\n**Lesson:** Never trust a source file's own \"coded ID\" as a real\npseudonym without checking how it was constructed, a code built from\nname fragments (e.g. `AK-MUHAMMADDZ19`) is decodable by anyone with a\nroster. Always regenerate a salted-hash pseudonym before anything\nderived touches disk, and check every column, not just the obvious ones,\nagainst `org/student-data-policy.md` rule 1's identifier list\n(`Birthdate` is explicitly listed and is easy to miss since it doesn't\nread as \"personal data\" the way a name does).\n**Applies to:** every future `data-inbox/academic/` drop, and the\npseudonymization step in `academic/work-products/2026-07-13-alkhairiyah-usage-impact-analysis.md`\nshould be the template for how it's done.\n**Status:** Logged.\n\n# Lesson — Academic — 2026-07-13\n\n**Trigger:** Sekolah Alkhairiyah usage-impact analysis found Smartick's\nown internal progression metrics (Delta Level, Total Unit Dikuasai)\ncorrelate strongly with usage (r=+0.42 to +0.56), while the one\nexternal-ish outcome measure available showed no relationship (r=−0.05,\nnot significant).\n**Source:** Self-observed.\n**Lesson:** An internal platform-computed progression metric is not\nindependent evidence of learning impact when it is calculated from the\nsame session log as the usage measure being tested, the correlation is\nclose to mechanical. Any future causal or associational study must keep\ninternal-engine outcomes and external/independent outcomes in separate,\nclearly labeled result sections, never blend them into one headline\nnumber, or a mechanical relationship will get reported as if it were a\nreal effect.\n**Applies to:** `academic/playbook.md`'s \"Quarterly causal impact study\"\ndefault approach, folded in below.\n**Status:** Folded into playbook (2026-07-13).\n\n# Lesson — Academic — 2026-07-13\n\n**Trigger:** Once individual-level TKA test scores were matched to usage\ndata, usage correlated with TKA Math (r=+0.24, p=0.005), a real,\nstatistically significant result on an independent academic test. Before\nreporting it as a finding, checked whether usage predicted the TKA\nBahasa Indonesia score just as strongly, it did (r=+0.24), even though\nSmartick has no Bahasa Indonesia content. That reframed the finding from\n\"usage improves math\" to \"usage correlates with a general\nstudent-quality factor that isn't math-specific.\"\n**Source:** Self-observed.\n**Lesson:** Whenever a usage-vs-outcome study has access to more than one\noutcome measure, and at least one plausibly should NOT move with the\nproduct's usage (a subject or skill the product doesn't teach), always\nrun that as a placebo/falsification check before reporting a positive\nresult. A real product-specific effect should be stronger on the\nin-scope outcome than the out-of-scope one, if they move equally, the\nlikely story is a shared confound (ability, motivation, home support),\nnot product impact.\n**Applies to:** `academic/playbook.md`'s \"Quarterly causal impact study\"\ndefault approach, folded in below. Use this pattern any time a second,\nplausibly-unrelated outcome variable is available.\n**Status:** Folded into playbook (2026-07-13).\n\n# Lesson — Academic — 2026-07-13\n\n**Trigger:** Reported a null finding (usage doesn't predict Asesmen Awal\ngain) without having read the actual test content. Later reading the\nreal form (Barry supplied PDF exports) showed it's a general\nreasoning/logic diagnostic, not a curriculum-content test, a construct\nthat plausibly has little to do with what Smartick usage builds. The\n\"no relationship\" finding may be a construct mismatch, not evidence of\nno impact.\n**Source:** Self-observed.\n**Lesson:** Before treating a null usage-vs-outcome result as a real\nfinding, verify what the outcome instrument actually measures, not just\nthat it exists and is \"external.\" A null result on a test of the wrong\nconstruct is not evidence of no effect, it's an uninformative\ncomparison. Get the actual instrument (questions, framing, scoring)\nwhenever feasible before finalizing an interpretation, not after.\n**Applies to:** `academic/playbook.md`'s \"Quarterly causal impact study\"\ndefault approach, folded in below.\n**Status:** Folded into playbook (2026-07-13).\n",
       "findings": null
     },
@@ -274,6 +280,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Academic — 2026-07-14",
+      "department": "Academic",
+      "date": "2026-07-14",
+      "id": "ESC-20260714-ACAD-01",
+      "tier": "2 (approval)",
+      "issue": "Following the Sekolah Alkhairiyah usage-impact analysis (PRs\n#59, #60, #61, #63), Academic drafted a full redesign proposal for the\npretest/posttest instrument and the causal research design\n(`academic/deliverables/2026-07-14-pretest-posttest-and-causal-design-proposal.md`).\nTwo pieces of it, if implemented, change what real students or parents\nexperience: (1) building and administering a new curriculum-aligned\nassessment instrument to students, alongside the existing general-reasoning\ndiagnostic kept as a deliberate placebo check, and (2) a randomized\nencouragement design that would randomize which families receive an\nenhanced post-activation nudge sequence (piggybacking on Sales's existing\nB2B onboarding SOP, `sales/work-products/2026-07-08-sop-b2b-trial-to-onboarding.md`\nstage 8).",
+      "recommendation": "Approve starting with the randomized encouragement\ndesign on the next B2B cohort Sales onboards, it uses infrastructure\nthat already exists, denies no one the product, and is the\nhighest-leverage, lowest-cost next step. Treat the new assessment\ninstrument as a second, slightly slower-moving approval, it needs\nLearning Assessment Specialist build time against Product's curriculum\nfield export (still pending, see\n`academic/staff-logs/learning-assessment-specialist-log.md` 2026-07-06)\nbefore it is ready to pilot.",
+      "whyNotTier1": "per `academic/SYSTEM-PROMPT.md`, any\nintervention that changes what students experience is Tier 2. A new\ntest and randomized parent-nudge assignment both qualify.",
+      "neededBy": "Not time-critical today, but the encouragement\ndesign should be scoped before Sales's next B2B onboarding wave so the\nrandomization can be built into the SOP from the start rather than\nretrofitted.",
+      "crossDept": "Sales (onboarding SOP execution), Product\n(curriculum field export blocks the new test's build).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "7AC43D"
+    },
     {
       "heading": "Escalation — Academic — 2026-07-13",
       "department": "Academic",
