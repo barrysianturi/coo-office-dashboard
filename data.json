@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T03:34:46.099Z",
+  "generatedAt": "2026-07-14T03:37:17.468Z",
   "departments": [
     {
       "key": "sales",
@@ -339,9 +339,9 @@
       "whyNotTier1": "per `academic/SYSTEM-PROMPT.md`, any finding\npublished outside the org (parents, schools, marketing claims) and any\ncross-department use of impact data is Tier 2. This is both at once, two\ndepartments are about to put externally-facing claims in front of real\nprospects and school buyers using data neither Academic nor Marketing has\nindependently verified for outcome claims.",
       "neededBy": "Not blocking today (Sales's curriculum is already\nmerged and usable per Faiz), but should not sit long, C4 is already\ntrainable and Marketing's Workstream 4 is only \"partially unblocked\"\npending this.",
       "crossDept": "Sales (training curriculum C4/C5), Marketing\n(brand-positioning Workstream 4). Both are currently waiting on this exact\nconfirmation from Academic.",
-      "decision": "{pending}",
+      "decision": "there is already another analysis done by academic team that shows there is a strong positive correlation of Smartick activity to nilai TKA, please just work around this narrative. sure, there is a caveat behind, but work around it. _(via dashboard, 2026-07-14)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "7AC43D"
     },
     {
