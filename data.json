@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T14:54:57.893Z",
+  "generatedAt": "2026-07-14T03:17:38.961Z",
   "departments": [
     {
       "key": "sales",
@@ -285,9 +285,9 @@
       "whyNotTier1": "Per `academic/SYSTEM-PROMPT.md`, data-privacy\nquestions for children's data route to policy, not a Head's unilateral\ncall, and this is the exact re-raise condition Barry attached to his\noriginal ruling.",
       "neededBy": "Not blocking (already handled safely this time),\nbut before the next real data drop, so the stripping step happens before\nit reaches a Head rather than after.",
       "crossDept": "HR & GA (Legal & Compliance owns policy\ninterpretation), any department that later receives a real data-inbox\ndrop.",
-      "decision": "{pending}",
+      "decision": "noted, actually if possible you can just get the age, and mask all personal data so the children cannot be specifically identified. but, correct decision to never put personal/confidential data and upload it to your corpus or to our repository _(via dashboard, 2026-07-14)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "7AC43D"
     },
     {
