@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T03:37:17.468Z",
+  "generatedAt": "2026-07-14T03:42:10.882Z",
   "departments": [
     {
       "key": "sales",
@@ -419,9 +419,9 @@
       "whyNotTier1": "This requires a real hiring or reallocation\ndecision involving real people (Izzah, Kak Runi, Kak Vamel), Sales can\nsequence and prioritize but cannot create headcount or reallocate real\nstaff time itself.",
       "neededBy": "Before committing to the Path Z 45-day timeline\nor promising execution speed on the churn/activation backlog, since the\nsequencing in the strategy doc assumes current headcount and will slip\nwithout a decision either way.",
       "crossDept": "HR & GA (any real hire or role-scope change\nroutes through their span-of-control process), Business (recommendation-\nto-execution hit rate on `ESC-20260706-BUS-01/03` and `ESC-20260708-BUS-02`\ndepends on this getting resourced).",
-      "decision": "{pending}",
+      "decision": "Path z is b2b, izzah is mostly commenting in b2c. but noted, we will hire one more to focus on activation sampling, and maybe will hire freelancers like Runi to work on outbound as well. Sales training curriculum is on its way being developed, right? continue working on it. _(via dashboard, 2026-07-14)_",
       "delegatedTo": "{pending, Barry to assign}",
-      "pending": true,
+      "pending": false,
       "accent": "FBA62D"
     },
     {
