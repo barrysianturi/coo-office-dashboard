@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T23:17:55.945Z",
+  "generatedAt": "2026-07-15T00:04:15.123Z",
   "departments": [
     {
       "key": "sales",
@@ -8,7 +8,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-13.md",
-          "content": "# Sales — Daily Check-in — 2026-07-13\n\n**Progress:** Developed a sales training curriculum for Faiz, Izzah, and\nVamel (`sales/deliverables/2026-07-13-sales-training-curriculum.md`).\nCompetency-based, built from Izzah's own field-enumerated gaps plus real\ncustomer-survey data, with a Shared Core (product, journey, commercial\nmechanics, value narrative, positioning, communication/tools) and\nrole-specific tracks. Its structural move: turns Faiz and Izzah into the\ninternal trainer and QA function the team has never had. Grounded in\nProduct, Marketing, Business, and HR & GA published work.\n**Blockers:** None. Five cross-department consult asks dispatched (Product,\nAcademic, Marketing, HR & GA, Business) for sign-off on content they own;\ncurriculum is usable now and gets more authoritative as those land.\n**Needs Barry today:** Confirm the C3 discount-type definitions and current\npricing (ties to `ESC-20260706-BUS-02`) so the commercial-mechanics module\nis not taught on unconfirmed numbers.\n\n**Update (later 2026-07-13):** Product consult came back (PR #53). C1 and C2\nconfirmed fine, C3 corrected: fixed the admin-fee wording (Rp4,500 applies\nto every checkout link, not WhatsApp-only), pulled the refund specifics,\nand switched pricing to teach the lookup mechanism rather than fixed\nfigures. Product surfaced an unresolved refund-rule gap (annual-only policy\nvs prorated refunds happening in practice, flagged by Finance 2026-07-06,\nstill open after 5 days); logged it as `ESC-20260713-SALES-01` since CS\nanswers refund requests live without an agreed rule. Academic, Marketing,\nand HR & GA consults still open.\n"
+          "content": "# Sales — Daily Check-in — 2026-07-13\n\n**Progress:** Developed a sales training curriculum for Faiz, Izzah, and\nVamel (`sales/deliverables/2026-07-13-sales-training-curriculum.md`).\nCompetency-based, built from Izzah's own field-enumerated gaps plus real\ncustomer-survey data, with a Shared Core (product, journey, commercial\nmechanics, value narrative, positioning, communication/tools) and\nrole-specific tracks. Its structural move: turns Faiz and Izzah into the\ninternal trainer and QA function the team has never had. Grounded in\nProduct, Marketing, Business, and HR & GA published work.\n**Blockers:** None. Five cross-department consult asks dispatched (Product,\nAcademic, Marketing, HR & GA, Business) for sign-off on content they own;\ncurriculum is usable now and gets more authoritative as those land.\n**Needs Barry today:** Confirm the C3 discount-type definitions and current\npricing (ties to `ESC-20260706-BUS-02`) so the commercial-mechanics module\nis not taught on unconfirmed numbers.\n\n**Update (later 2026-07-13):** Product consult came back (PR #53). C1 and C2\nconfirmed fine, C3 corrected: fixed the admin-fee wording (Rp4,500 applies\nto every checkout link, not WhatsApp-only), pulled the refund specifics,\nand switched pricing to teach the lookup mechanism rather than fixed\nfigures. Product surfaced an unresolved refund-rule gap (annual-only policy\nvs prorated refunds happening in practice, flagged by Finance 2026-07-06,\nstill open after 5 days); logged it as `ESC-20260713-SALES-01` since CS\nanswers refund requests live without an agreed rule. Academic, Marketing,\nand HR & GA consults still open.\n\n**Correction (later 2026-07-13):** Barry flagged that C1's global-positioning\nnarrative was inaccurate. Checked the live `smartick.id` homepage: it leads\nwith personalized, scientifically-based math, 15 minutes a day, adapted to\nthe Indonesian context, trusted by 40,000+ parents, and does not mention\nglobal/Spanish origin at all. My C1 wrongly turned the Product KB's internal\nengine-ownership note into the customer pitch (\"local face of a global\nengine, not locally built\"). Revised C1 to lead with our actual public\npositioning, demoted the global heritage to an optional credibility proof\npoint (Marketing's call), and kept the global/local boundary as an\ninternal-only operational note. Updated assessment Q1 accordingly. Note:\nthe Product KB carries the same customer-facing line and may warrant a\nProduct fix.\n"
         },
         {
           "filename": "2026-07-08.md",
@@ -33,7 +33,7 @@
         },
         {
           "filename": "2026-07-13-sales-training-curriculum.md",
-          "sizeBytes": 17693,
+          "sizeBytes": 19281,
           "isDir": false
         }
       ],
