@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T07:37:02.842Z",
+  "generatedAt": "2026-07-16T15:55:09.172Z",
   "departments": [
     {
       "key": "sales",
@@ -293,6 +293,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Finance — 2026-07-16",
+      "department": "Finance",
+      "date": "2026-07-16",
+      "id": "ESC-20260716-FIN-01",
+      "tier": "2 (approval)",
+      "issue": "Fira (human FAT officer) submitted a revised Chart of Accounts\nthat, among other real improvements, merges account 5309 (Bank & Monit\nCharges) back into 8201, into a single \"Bank Administrative Fees & Taxes\"\naccount. This reverses a split Barry already approved on 2026-07-05/06\nafter checking real data, at the time 5309 had zero historical postings,\neverything sat in 8201, and the split was meant to separate real\nbank/Monit admin fees from the narrower final-tax-on-bank-interest going\nforward (`finance/staff-logs/accounting-officer-log.md`, 2026-07-06\nentry). Fira's merge arguably matches how the money was actually posted\nhistorically and is simpler for a small team to maintain.",
+      "recommendation": "Kept the existing split as the default in the\nreconciled COA (`finance/reference/chart-of-accounts.csv`) rather than\nsilently reversing an approved decision, both structures are defensible.\nRecommend Barry and Fira talk directly and pick one, whichever they\ndecide, someone still needs to correctly reclass the ~148 historical 8201\nrows either way (already scoped in the accounting-officer-log entry\nabove).",
+      "whyNotTier1": "Reverses a decision Barry already made after\nreviewing real data; Finance shouldn't silently pick a side between its\nown prior analysis and a human FAT officer's professional judgment.",
+      "neededBy": "Before the retroactive 5309/8201 cleanup\n(already scoped and ready to execute) is actually run, no other\ndeadline.",
+      "crossDept": "None identified, this is between Finance's\nagentic and human sides.",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "1B8A5E"
+    },
     {
       "heading": "Escalation — Sales — 2026-07-15",
       "department": "Sales",
