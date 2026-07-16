@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T20:33:00.922Z",
+  "generatedAt": "2026-07-16T20:45:32.805Z",
   "departments": [
     {
       "key": "sales",
@@ -293,6 +293,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Finance — 2026-07-17",
+      "department": "Finance",
+      "date": "2026-07-17",
+      "id": "ESC-20260717-FIN-01",
+      "tier": "3 (real-world execution)",
+      "issue": "Retagging all past journals to the new COA surfaced that **June\n2026 has 65 rows carrying Rp586,337,479 with a blank `Kode akun`** in the\nsource journal (`data-inbox/finance/2026-06/journal.csv`). These are real,\nidentifiable transactions, not noise: 27 salary payments (including Galih,\nHadi, Waitatiri, Barry), BNI Life insurance Rp180,797,800, BPJS\nKetenagakerjaan Rp21,443,277, BPJS Kesehatan Rp7,366,750, WMI office rent\nRp30,733,333, PPh 21 payments, e-materai. Each has a date, a description\nand an amount, and their counterparts exist so the journal still balances\n(Rp17,165,122,762 both sides), but they belong to no account and therefore\nappear in no ledger or P&L line even though the cash actually moved.\nConsequence: June 2026 cannot be closed, and no FY2026 statement can be\nproduced on an account basis, until they are coded. FY2025 has no such\nrows, every month balances and is fully coded.",
+      "recommendation": "Fira assigns the account codes. All 65 rows are listed\nready to fill in `finance/work-products/journal-retag-2025-2026-for-review.xlsx`,\nsheet \"Needs Your Review\", with Old Code = \"(none)\". Finance can apply\nthem to the retag immediately once returned. Most look mechanical (salary\n-> 5301, BPJS -> 5302/5303, rent -> 5305, insurance -> 5310), but Finance\nshould not guess account codes for Rp586m of real payroll and statutory\npayments on a human officer's behalf.",
+      "whyNotTier1": "Needs a real person with knowledge of the actual\nJune 2026 transactions to assign codes; this is source-data completion,\nnot something the agentic side can infer safely at this materiality.",
+      "neededBy": "Before FY2026 books close or any FY2026 statement\nis produced. FY2025 is unaffected and can proceed independently.",
+      "crossDept": "None identified.",
+      "decision": "{pending}",
+      "delegatedTo": "Barry to route to Fira (Finance, Accounting & Tax Officer)",
+      "pending": true,
+      "accent": "1B8A5E"
+    },
     {
       "heading": "Escalation — Finance — 2026-07-16",
       "department": "Finance",
