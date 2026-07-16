@@ -1,11 +1,15 @@
 {
-  "generatedAt": "2026-07-16T05:44:03.537Z",
+  "generatedAt": "2026-07-16T07:23:08.863Z",
   "departments": [
     {
       "key": "sales",
       "name": "Sales",
       "accent": "FBA62D",
       "dailyCheckins": [
+        {
+          "filename": "2026-07-16.md",
+          "content": "# Sales — Daily Check-in — 2026-07-16\n\n**Progress:** Drafted a customization-request triage matrix for the sales\nteam (`sales/work-products/2026-07-16-customization-request-matrix.md`):\nper request type (soal tambahan, persiapan TKA, lomba, laporan sekolah,\nintegrasi LMS, dll), a Status (STANDAR / TERBATAS / CEK / GLOBAL / TOLAK),\nthe owning team, a lead time, and what sales may or may not promise, plus a\n\"how to decline gracefully\" section. First-pass feasibility grounded in the\nglobal-vs-local scope boundary; most requests are already covered by\nexisting features (Sekolah, Gym, reports) or are event-type work with a\nlead time.\n**Blockers:** None on drafting. Feasibility rows need confirmation from\nAcademic (TKA/exam/olympiad claims, curriculum alignment), Product (custom\nreports, LMS integration), and Marketing (lomba/event lead times).\n**Needs Barry today:** None. Cross-team consults being dispatched to\nAcademic, Product, and Marketing to validate their rows before the matrix\nis treated as final.\n"
+        },
         {
           "filename": "2026-07-15.md",
           "content": "# Sales — Daily Check-in — 2026-07-15\n\n**Progress:** Drafted the Sales discount policy\n(`sales/deliverables/2026-07-15-discount-policy-draft.md`) after Barry\nshared the NAY rate card. Key insight: multi-child pricing is already\npublished in the NAY tables (1/2/3-anak columns, 13-34% built-in family\ndiscount), so \"diskon 3 anak\" is not a favor, sales just quote the column.\nThe policy governs the real gap: discretionary discounts beyond the rate\ncard (employee/F&F/KOL/one-off) via caps, codes, tracking, and a\nunit-economics floor. Also rebalanced the C1-C6 assessment earlier (answer\nlength no longer signals the key) and revised C1 to match smartick.id.\n**Blockers:** None on drafting. The policy needs Barry's approval plus\ndiscretionary caps and the LTV:CAC floor from Business/Finance.\n**Needs Barry today:** `ESC-20260715-SALES-01` (approve the discount-policy\nstructure and confirm five open items: kolib definition, active batch,\ncaps/floor, employee code allowance, and the fixed/40%/referral\ndefinitions). Ties into `ESC-20260706-BUS-02`.\n"
