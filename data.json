@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T15:55:09.172Z",
+  "generatedAt": "2026-07-16T19:18:33.735Z",
   "departments": [
     {
       "key": "sales",
@@ -304,9 +304,9 @@
       "whyNotTier1": "Reverses a decision Barry already made after\nreviewing real data; Finance shouldn't silently pick a side between its\nown prior analysis and a human FAT officer's professional judgment.",
       "neededBy": "Before the retroactive 5309/8201 cleanup\n(already scoped and ready to execute) is actually run, no other\ndeadline.",
       "crossDept": "None identified, this is between Finance's\nagentic and human sides.",
-      "decision": "{pending}",
+      "decision": "Merge 5309 into 8201, confirmed 2026-07-17. 5309 is not needed. _(via chat, 2026-07-17)_",
       "delegatedTo": "n/a",
-      "pending": true,
+      "pending": false,
       "accent": "1B8A5E"
     },
     {
