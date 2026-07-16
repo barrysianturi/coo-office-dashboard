@@ -1,11 +1,15 @@
 {
-  "generatedAt": "2026-07-15T12:29:00.810Z",
+  "generatedAt": "2026-07-16T05:44:03.537Z",
   "departments": [
     {
       "key": "sales",
       "name": "Sales",
       "accent": "FBA62D",
       "dailyCheckins": [
+        {
+          "filename": "2026-07-15.md",
+          "content": "# Sales — Daily Check-in — 2026-07-15\n\n**Progress:** Drafted the Sales discount policy\n(`sales/deliverables/2026-07-15-discount-policy-draft.md`) after Barry\nshared the NAY rate card. Key insight: multi-child pricing is already\npublished in the NAY tables (1/2/3-anak columns, 13-34% built-in family\ndiscount), so \"diskon 3 anak\" is not a favor, sales just quote the column.\nThe policy governs the real gap: discretionary discounts beyond the rate\ncard (employee/F&F/KOL/one-off) via caps, codes, tracking, and a\nunit-economics floor. Also rebalanced the C1-C6 assessment earlier (answer\nlength no longer signals the key) and revised C1 to match smartick.id.\n**Blockers:** None on drafting. The policy needs Barry's approval plus\ndiscretionary caps and the LTV:CAC floor from Business/Finance.\n**Needs Barry today:** `ESC-20260715-SALES-01` (approve the discount-policy\nstructure and confirm five open items: kolib definition, active batch,\ncaps/floor, employee code allowance, and the fixed/40%/referral\ndefinitions). Ties into `ESC-20260706-BUS-02`.\n"
+        },
         {
           "filename": "2026-07-13.md",
           "content": "# Sales — Daily Check-in — 2026-07-13\n\n**Progress:** Developed a sales training curriculum for Faiz, Izzah, and\nVamel (`sales/deliverables/2026-07-13-sales-training-curriculum.md`).\nCompetency-based, built from Izzah's own field-enumerated gaps plus real\ncustomer-survey data, with a Shared Core (product, journey, commercial\nmechanics, value narrative, positioning, communication/tools) and\nrole-specific tracks. Its structural move: turns Faiz and Izzah into the\ninternal trainer and QA function the team has never had. Grounded in\nProduct, Marketing, Business, and HR & GA published work.\n**Blockers:** None. Five cross-department consult asks dispatched (Product,\nAcademic, Marketing, HR & GA, Business) for sign-off on content they own;\ncurriculum is usable now and gets more authoritative as those land.\n**Needs Barry today:** Confirm the C3 discount-type definitions and current\npricing (ties to `ESC-20260706-BUS-02`) so the commercial-mechanics module\nis not taught on unconfirmed numbers.\n\n**Update (later 2026-07-13):** Product consult came back (PR #53). C1 and C2\nconfirmed fine, C3 corrected: fixed the admin-fee wording (Rp4,500 applies\nto every checkout link, not WhatsApp-only), pulled the refund specifics,\nand switched pricing to teach the lookup mechanism rather than fixed\nfigures. Product surfaced an unresolved refund-rule gap (annual-only policy\nvs prorated refunds happening in practice, flagged by Finance 2026-07-06,\nstill open after 5 days); logged it as `ESC-20260713-SALES-01` since CS\nanswers refund requests live without an agreed rule. Academic, Marketing,\nand HR & GA consults still open.\n\n**Correction (later 2026-07-13):** Barry flagged that C1's global-positioning\nnarrative was inaccurate. Checked the live `smartick.id` homepage: it leads\nwith personalized, scientifically-based math, 15 minutes a day, adapted to\nthe Indonesian context, trusted by 40,000+ parents, and does not mention\nglobal/Spanish origin at all. My C1 wrongly turned the Product KB's internal\nengine-ownership note into the customer pitch (\"local face of a global\nengine, not locally built\"). Revised C1 to lead with our actual public\npositioning, demoted the global heritage to an optional credibility proof\npoint (Marketing's call), and kept the global/local boundary as an\ninternal-only operational note. Updated assessment Q1 accordingly. Note:\nthe Product KB carries the same customer-facing line and may warrant a\nProduct fix.\n"
@@ -34,6 +38,11 @@
         {
           "filename": "2026-07-13-sales-training-curriculum.md",
           "sizeBytes": 19281,
+          "isDir": false
+        },
+        {
+          "filename": "2026-07-15-discount-policy-draft.md",
+          "sizeBytes": 6752,
           "isDir": false
         }
       ],
@@ -280,6 +289,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Sales — 2026-07-15",
+      "department": "Sales",
+      "date": "2026-07-15",
+      "id": "ESC-20260715-SALES-01",
+      "tier": "2 (approval)",
+      "issue": "Discount requests keep arriving through personal/employee\nrelationships (real example: a WhatsApp asking for a discount for 3\nchildren via an employee's contact), with no written policy, so each is\nhandled ad hoc, sets precedent, and leaks margin, while ARPPU is already\ndown to ~Rp105k and discount cost already 35-53% of gross revenue\n(`business/deliverables/b2c-game-plan-2026-07.md`). The NAY rate card\nBarry shared 2026-07-15 shows multi-child pricing is already published\n(1/2/3-anak columns, with a 13-34% built-in family discount), so the real\ngap is governing discretionary discounts BEYOND the rate card (employee,\nfriends and family, KOL/barter, one-off deals). A draft policy is ready:\n`sales/deliverables/2026-07-15-discount-policy-draft.md`.",
+      "recommendation": "Approve the two-layer structure in the draft (Layer 1:\nquote the published NAY rate card, no approval; Layer 2: discretionary\ndiscounts capped, coded, tracked, with a unit-economics floor). The numbers\nSales cannot set alone: the discretionary caps and the LTV:CAC 1.93x floor\nneed Business/Finance, and this ties into the still-open discount-ladder\nreview `ESC-20260706-BUS-02`. Also confirm five open items in the draft:\nwhat \"kolib\" is and whether it is separable, which batch (5% vs 25% admin)\nis currently active, the discretionary cap and floor figures, the\nemployee/F&F code allowance, and the definitions of the \"fixed / 40% /\nreferral\" discounts Izzah named.",
+      "whyNotTier1": "Setting or changing discount policy and any\nnumber that touches the live pricing/discount ladder is Tier 2 per the\nescalation model, and the figures cross Business (pricing) and Finance\n(margin floor).",
+      "neededBy": "Soon, live customer requests are being answered\nwithout a policy right now, and inconsistent answers are a customer-trust\nand margin risk.",
+      "crossDept": "Business (discount-ladder review, pricing\ndefinitions), Finance (unit-economics floor, CAC-tag mechanism), Marketing\n(NAY campaign pricing owner).",
+      "decision": "{pending}",
+      "delegatedTo": "n/a",
+      "pending": true,
+      "accent": "FBA62D"
+    },
     {
       "heading": "Escalation — Academic — 2026-07-14",
       "department": "Academic",
