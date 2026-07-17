@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T03:19:52.613Z",
+  "generatedAt": "2026-07-17T03:38:53.937Z",
   "departments": [
     {
       "key": "sales",
@@ -8,7 +8,7 @@
       "dailyCheckins": [
         {
           "filename": "2026-07-16.md",
-          "content": "# Sales — Daily Check-in — 2026-07-16\n\n**Progress:** Drafted a customization-request triage matrix for the sales\nteam (`sales/work-products/2026-07-16-customization-request-matrix.md`):\nper request type (soal tambahan, persiapan TKA, lomba, laporan sekolah,\nintegrasi LMS, dll), a Status (STANDAR / TERBATAS / CEK / GLOBAL / TOLAK),\nthe owning team, a lead time, and what sales may or may not promise, plus a\n\"how to decline gracefully\" section. First-pass feasibility grounded in the\nglobal-vs-local scope boundary; most requests are already covered by\nexisting features (Sekolah, Gym, reports) or are event-type work with a\nlead time.\n**Blockers:** None on drafting. Feasibility rows need confirmation from\nAcademic (TKA/exam/olympiad claims, curriculum alignment), Product (custom\nreports, LMS integration), and Marketing (lomba/event lead times).\n**Needs Barry today:** None. Cross-team consults being dispatched to\nAcademic, Product, and Marketing to validate their rows before the matrix\nis treated as final.\n"
+          "content": "# Sales — Daily Check-in — 2026-07-16\n\n**Progress:** Drafted a customization-request triage matrix for the sales\nteam (`sales/work-products/2026-07-16-customization-request-matrix.md`):\nper request type (soal tambahan, persiapan TKA, lomba, laporan sekolah,\nintegrasi LMS, dll), a Status (STANDAR / TERBATAS / CEK / GLOBAL / TOLAK),\nthe owning team, a lead time, and what sales may or may not promise, plus a\n\"how to decline gracefully\" section. First-pass feasibility grounded in the\nglobal-vs-local scope boundary; most requests are already covered by\nexisting features (Sekolah, Gym, reports) or are event-type work with a\nlead time.\n**Blockers:** None on drafting. Feasibility rows need confirmation from\nAcademic (TKA/exam/olympiad claims, curriculum alignment), Product (custom\nreports, LMS integration), and Marketing (lomba/event lead times).\n**Needs Barry today:** None. Cross-team consults being dispatched to\nAcademic, Product, and Marketing to validate their rows before the matrix\nis treated as final.\n\n**Update (later 2026-07-16):** Barry shared the live B2B tracker (52 rows).\nTwo long-standing gaps are now closed: the tracker marks Onboarding=True\n(was 0 of 51, so win rate is finally computable), and Alkhairiyah is now in\nthe pipeline (Marketing had flagged it as invisible). Wrote\n`sales/work-products/2026-07-16-b2b-account-status.md` and updated the B2B\nwin-rate row in `org/kpi-dashboard.md`. Live book: 6 accounts, ~1,020\nstudents, win rate 20% of those reaching Proposal & Offering. Two flags\nthat matter more than the AM hire: Dinas Barito Kuala (3,096 students, the\nsingle largest opportunity) has gone Cold, and Path Y is 30 of 52 rows with\nzero progression past First Meeting. The live book maps to ~11 capacity\npoints against a ~15-20 point year-1 AM, so one AM is right-sized.\n"
         },
         {
           "filename": "2026-07-15.md",
@@ -734,8 +734,8 @@
         "dept": "Sales",
         "kpi": "Sales target achieved",
         "subMetric": "B2B win rate",
-        "target": "",
-        "current": "Not computable yet, pipeline tracker drops closed-won rows instead of marking Onboarded (0 of 51 active rows marked Onboarding=True despite real historical B2B revenue). Path Z (principal outreach) has the best per-lead hit rate, 2 of 3 Hot, and is the least resourced pathway, growth plan in `sales/deliverables/2026-07-08-sales-organization-strategy.md`",
+        "target": "(no formal target set yet)",
+        "current": "Now computable, the tracker marks Onboarding=True (was 0 of 51). Per the 2026-07-16 tracker: 3 of 52 onboarded (5.8%), 5 DEAL (9.6%), and 20% of the 15 that reached Proposal & Offering or beyond. Live book: 6 accounts, ~1,020 students. Two drags: Dinas Barito Kuala (3,096 students, the largest opportunity) has gone Cold, and Path Y is 30 of 52 rows with zero progression past First Meeting. See `sales/work-products/2026-07-16-b2b-account-status.md`",
         "status": "OFF TRACK",
         "accent": "FBA62D"
       },
@@ -947,6 +947,6 @@
         "accent": "FF5094"
       }
     ],
-    "lastUpdated": "2026-07-13 (Academic rows only, by Academic); 2026-07-13 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-08 (Sales rows only, by Sales); 2026-07-10 (Marketing rows only, by Marketing)"
+    "lastUpdated": "2026-07-16 (Sales rows only, by Sales); 2026-07-13 (Academic rows only, by Academic); 2026-07-13 (HR & GA rows only, by HR & GA); 2026-07-10 (Business rows only, by Business); 2026-07-10 (Marketing rows only, by Marketing)"
   }
 }
