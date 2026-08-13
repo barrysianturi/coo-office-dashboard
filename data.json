@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T05:22:28.046Z",
+  "generatedAt": "2026-08-13T08:42:00.686Z",
   "departments": [
     {
       "key": "sales",
@@ -51,12 +51,12 @@
         },
         {
           "filename": "2026-07-23-smartick-english-sales-training-brief.md",
-          "sizeBytes": 13034,
+          "sizeBytes": 14250,
           "isDir": false
         },
         {
           "filename": "2026-07-23-smartick-english-sales-training-deck.pptx",
-          "sizeBytes": 53203,
+          "sizeBytes": 55299,
           "isDir": false
         }
       ],
@@ -115,12 +115,12 @@
         },
         {
           "filename": "smartick-english-deck-improvement-notes-2026-08-13.md",
-          "sizeBytes": 10769,
+          "sizeBytes": 11044,
           "isDir": false
         },
         {
           "filename": "smartick-english-pricing-structure-recommendation-2026-08-13.md",
-          "sizeBytes": 9628,
+          "sizeBytes": 9646,
           "isDir": false
         },
         {
@@ -330,7 +330,7 @@
       "id": "ESC-20260813-BUS-01",
       "tier": "2 (approval)",
       "issue": "The Smartick English sales training brief\n(`sales/deliverables/2026-07-23-smartick-english-sales-training-brief.md`)\nhas been blocked on a final price since 2026-07-23, explicitly waiting on\n\"survey PSM + Business/Finance.\" That survey now has usable data: 58 raw\nresponses (47 usable after hand verification), refreshed from an earlier\n38-response pass. Indifference price (IPP) ~Rp198,000, marginal-\nexpensiveness ceiling (PME) ~Rp202,000, both within Rp2,000 of the current\nIndonesian-version list price (Rp199,999). Full analysis:\n`business/work-products/smartick-english-psm-analysis-2026-08-13.md`.",
-      "recommendation": "Adopt the draft structure in\n`business/deliverables/smartick-english-pricing-structure-recommendation-\n2026-08-13.md`, reuse the Indonesian product's own duration/sibling\ndiscount ratios as EN's actual charged price, both during and after\nlaunch (every resulting cell falls inside the PSM's validated\nRp120,000-Rp202,000 range). Updated same day per Barry's direction: pair\nthat real price with a struck-through sticker price for the Phase 1 pilot\nwindow (Rp399,999 dicoret jadi Rp199,999 for 1 child/1 month, same 2x\nratio applied across the rest of the matrix), rather than a real\ndiscount. Drop the sticker after the pilot window, the real price does\nnot change.",
+      "recommendation": "Adopt the draft structure in\n`business/deliverables/smartick-english-pricing-structure-recommendation-\n2026-08-13.md`, reuse the Indonesian product's own duration/sibling\ndiscount ratios as EN's actual charged price, both during and after\nlaunch (every resulting cell falls inside the PSM's validated\nRp120,000-Rp202,000 range). Updated same day per Barry's direction twice:\n(1) pair the real price with a struck-through sticker price for the\nPhase 1 pilot window (Rp399,999 dicoret jadi Rp199,999 for 1 child/1\nmonth, same 2x ratio applied across the rest of the matrix) rather than a\nreal discount, drop the sticker after the pilot window since the real\nprice never changes; (2) durations are 1 and 3 months only, no 6-month\ntier, and this is Smartick English standalone, no Kolib bundle, distinct\nfrom the Indonesian NAY campaign rate card the sales brief currently\nreferences as a placeholder.",
       "whyNotTier1": "This sets the actual price Sales quotes to real\ncustomers starting mid-to-late August, a pricing decision with direct\nrevenue and unit-economics impact, not a routine data read.",
       "neededBy": "Before Sales rollout (mid-to-late August per the\nproject brief's timeline), and ahead of the 10-14 August sales training\nwindow if possible, since the training deck's pricing slide is currently\na placeholder.",
       "crossDept": "Sales (training brief/deck update, discount-\nstacking rule, now simplified since the sticker isn't a real discount to\nstack), Finance (confirm the real price matrix clears the LTV:CAC >= 1.93x\nfloor, an easier bar than the earlier draft since no cell is cut below\nlist anymore), Product (confirm whether the Rp4,500 admin fee applies to\nEN checkout the same as ID), and a quick compliance sanity check on\ndisplaying a struck-through price with no prior purchase history behind\nit.",
