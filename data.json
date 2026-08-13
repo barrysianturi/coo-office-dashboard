@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T03:26:46.193Z",
+  "generatedAt": "2026-08-13T02:32:59.245Z",
   "departments": [
     {
       "key": "sales",
@@ -47,6 +47,16 @@
         {
           "filename": "2026-07-15-discount-policy-draft.md",
           "sizeBytes": 6752,
+          "isDir": false
+        },
+        {
+          "filename": "2026-07-23-smartick-english-sales-training-brief.md",
+          "sizeBytes": 13034,
+          "isDir": false
+        },
+        {
+          "filename": "2026-07-23-smartick-english-sales-training-deck.pptx",
+          "sizeBytes": 53203,
           "isDir": false
         }
       ],
@@ -100,12 +110,12 @@
         },
         {
           "filename": "smartick-english-clickup-tasks.csv",
-          "sizeBytes": 29725,
+          "sizeBytes": 8617,
           "isDir": false
         },
         {
           "filename": "smartick-english-project-brief.md",
-          "sizeBytes": 9337,
+          "sizeBytes": 10507,
           "isDir": false
         }
       ],
