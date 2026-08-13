@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T05:06:20.758Z",
+  "generatedAt": "2026-08-13T05:22:28.046Z",
   "departments": [
     {
       "key": "sales",
@@ -115,12 +115,12 @@
         },
         {
           "filename": "smartick-english-deck-improvement-notes-2026-08-13.md",
-          "sizeBytes": 9308,
+          "sizeBytes": 10769,
           "isDir": false
         },
         {
           "filename": "smartick-english-pricing-structure-recommendation-2026-08-13.md",
-          "sizeBytes": 7724,
+          "sizeBytes": 9628,
           "isDir": false
         },
         {
@@ -330,10 +330,10 @@
       "id": "ESC-20260813-BUS-01",
       "tier": "2 (approval)",
       "issue": "The Smartick English sales training brief\n(`sales/deliverables/2026-07-23-smartick-english-sales-training-brief.md`)\nhas been blocked on a final price since 2026-07-23, explicitly waiting on\n\"survey PSM + Business/Finance.\" That survey now has usable data: 58 raw\nresponses (47 usable after hand verification), refreshed from an earlier\n38-response pass. Indifference price (IPP) ~Rp198,000, marginal-\nexpensiveness ceiling (PME) ~Rp202,000, both within Rp2,000 of the current\nIndonesian-version list price (Rp199,999). Full analysis:\n`business/work-products/smartick-english-psm-analysis-2026-08-13.md`.",
-      "recommendation": "Adopt the draft structure in\n`business/deliverables/smartick-english-pricing-structure-recommendation-\n2026-08-13.md`, reuse the Indonesian product's own duration/sibling\ndiscount ratios for EN's standing list price (every resulting cell falls\ninside the PSM's validated Rp120,000-Rp202,000 range), plus a 15% launch\ndiscount for the Phase 1 pilot window (5% only for the 3-child tier, to\navoid stacking below the survey's Rp120,000 quality-suspicion floor).\nRevert to list price at Phase 2 Go/No-Go or once known bugs/content\nmismatch are resolved, whichever comes first.",
+      "recommendation": "Adopt the draft structure in\n`business/deliverables/smartick-english-pricing-structure-recommendation-\n2026-08-13.md`, reuse the Indonesian product's own duration/sibling\ndiscount ratios as EN's actual charged price, both during and after\nlaunch (every resulting cell falls inside the PSM's validated\nRp120,000-Rp202,000 range). Updated same day per Barry's direction: pair\nthat real price with a struck-through sticker price for the Phase 1 pilot\nwindow (Rp399,999 dicoret jadi Rp199,999 for 1 child/1 month, same 2x\nratio applied across the rest of the matrix), rather than a real\ndiscount. Drop the sticker after the pilot window, the real price does\nnot change.",
       "whyNotTier1": "This sets the actual price Sales quotes to real\ncustomers starting mid-to-late August, a pricing decision with direct\nrevenue and unit-economics impact, not a routine data read.",
       "neededBy": "Before Sales rollout (mid-to-late August per the\nproject brief's timeline), and ahead of the 10-14 August sales training\nwindow if possible, since the training deck's pricing slide is currently\na placeholder.",
-      "crossDept": "Sales (training brief/deck update, discount-\nstacking rule), Finance (needs to confirm the launch matrix, especially\nthe Rp121,599 three-child/six-month cell, clears the LTV:CAC >= 1.93x\nfloor used elsewhere in the discount policy), Product (confirm whether\nthe Rp4,500 admin fee applies to EN checkout the same as ID).",
+      "crossDept": "Sales (training brief/deck update, discount-\nstacking rule, now simplified since the sticker isn't a real discount to\nstack), Finance (confirm the real price matrix clears the LTV:CAC >= 1.93x\nfloor, an easier bar than the earlier draft since no cell is cut below\nlist anymore), Product (confirm whether the Rp4,500 admin fee applies to\nEN checkout the same as ID), and a quick compliance sanity check on\ndisplaying a struck-through price with no prior purchase history behind\nit.",
       "decision": "{pending}",
       "delegatedTo": "",
       "pending": true,
