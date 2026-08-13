@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T02:32:59.245Z",
+  "generatedAt": "2026-08-13T05:06:20.758Z",
   "departments": [
     {
       "key": "sales",
@@ -111,6 +111,16 @@
         {
           "filename": "smartick-english-clickup-tasks.csv",
           "sizeBytes": 8617,
+          "isDir": false
+        },
+        {
+          "filename": "smartick-english-deck-improvement-notes-2026-08-13.md",
+          "sizeBytes": 9308,
+          "isDir": false
+        },
+        {
+          "filename": "smartick-english-pricing-structure-recommendation-2026-08-13.md",
+          "sizeBytes": 7724,
           "isDir": false
         },
         {
@@ -313,6 +323,22 @@
     }
   ],
   "escalations": [
+    {
+      "heading": "Escalation — Business — 2026-08-13",
+      "department": "Business",
+      "date": "2026-08-13",
+      "id": "ESC-20260813-BUS-01",
+      "tier": "2 (approval)",
+      "issue": "The Smartick English sales training brief\n(`sales/deliverables/2026-07-23-smartick-english-sales-training-brief.md`)\nhas been blocked on a final price since 2026-07-23, explicitly waiting on\n\"survey PSM + Business/Finance.\" That survey now has usable data: 58 raw\nresponses (47 usable after hand verification), refreshed from an earlier\n38-response pass. Indifference price (IPP) ~Rp198,000, marginal-\nexpensiveness ceiling (PME) ~Rp202,000, both within Rp2,000 of the current\nIndonesian-version list price (Rp199,999). Full analysis:\n`business/work-products/smartick-english-psm-analysis-2026-08-13.md`.",
+      "recommendation": "Adopt the draft structure in\n`business/deliverables/smartick-english-pricing-structure-recommendation-\n2026-08-13.md`, reuse the Indonesian product's own duration/sibling\ndiscount ratios for EN's standing list price (every resulting cell falls\ninside the PSM's validated Rp120,000-Rp202,000 range), plus a 15% launch\ndiscount for the Phase 1 pilot window (5% only for the 3-child tier, to\navoid stacking below the survey's Rp120,000 quality-suspicion floor).\nRevert to list price at Phase 2 Go/No-Go or once known bugs/content\nmismatch are resolved, whichever comes first.",
+      "whyNotTier1": "This sets the actual price Sales quotes to real\ncustomers starting mid-to-late August, a pricing decision with direct\nrevenue and unit-economics impact, not a routine data read.",
+      "neededBy": "Before Sales rollout (mid-to-late August per the\nproject brief's timeline), and ahead of the 10-14 August sales training\nwindow if possible, since the training deck's pricing slide is currently\na placeholder.",
+      "crossDept": "Sales (training brief/deck update, discount-\nstacking rule), Finance (needs to confirm the launch matrix, especially\nthe Rp121,599 three-child/six-month cell, clears the LTV:CAC >= 1.93x\nfloor used elsewhere in the discount policy), Product (confirm whether\nthe Rp4,500 admin fee applies to EN checkout the same as ID).",
+      "decision": "{pending}",
+      "delegatedTo": "",
+      "pending": true,
+      "accent": "43B2FC"
+    },
     {
       "heading": "Escalation — Finance — 2026-07-17",
       "department": "Finance",
