@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T08:49:33.615Z",
+  "generatedAt": "2026-08-14T09:43:05.954Z",
   "departments": [
     {
       "key": "sales",
@@ -111,6 +111,11 @@
         {
           "filename": "smartick-english-b2b-pricing-recommendation-2026-08-13.md",
           "sizeBytes": 8572,
+          "isDir": false
+        },
+        {
+          "filename": "smartick-english-b2b-sales-training-brief-2026-08-13.md",
+          "sizeBytes": 20496,
           "isDir": false
         },
         {
